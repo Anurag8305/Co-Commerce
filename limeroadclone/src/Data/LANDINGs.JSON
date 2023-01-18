@@ -1,0 +1,354 @@
+{
+	"Landing": [
+		{
+			"id": 1,
+			"image": "https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 123,
+			"likes": "11k"
+		},
+		{
+			"id": 2,
+			"image": "https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 3,
+			"image": "https://img2.junaroad.com/stories/story_p_63a95cd5f3805708227a5a64-1672997326.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 4,
+			"image": "https://img0.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 5,
+			"image": "https://img2.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 6,
+			"image": "https://img3.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 7,
+			"image": "https://img0.junaroad.com/stories/story_p_63a937aff47b700829f6b5e2-1672991478.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 8,
+			"image": "https://img2.junaroad.com/stories/story_p_63b6818713cb38081c3a1717-1673861012.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 9,
+			"image": "https://img3.junaroad.com/stories/story_p_63ac0811fd1d3c5cf6441b5c-1672779375.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 10,
+			"image": "https://img0.junaroad.com/stories/story_p_63a5712cadb8b82d0e11d5d1-1672991666.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 11,
+			"image": "https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 123,
+			"likes": "11k"
+		},
+		{
+			"id": 12,
+			"image": "https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 13,
+			"image": "https://img2.junaroad.com/stories/story_p_63a95cd5f3805708227a5a64-1672997326.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 14,
+			"image": "https://img0.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 15,
+			"image": "https://img2.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 16,
+			"image": "https://img3.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 17,
+			"image": "https://img0.junaroad.com/stories/story_p_63a937aff47b700829f6b5e2-1672991478.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 18,
+			"image": "https://img2.junaroad.com/stories/story_p_63b6818713cb38081c3a1717-1673861012.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 19,
+			"image": "https://img3.junaroad.com/stories/story_p_63ac0811fd1d3c5cf6441b5c-1672779375.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 20,
+			"image": "https://img0.junaroad.com/stories/story_p_63a5712cadb8b82d0e11d5d1-1672991666.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 21,
+			"image": "https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 123,
+			"likes": "11k"
+		},
+		{
+			"id": 22,
+			"image": "https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 23,
+			"image": "https://img2.junaroad.com/stories/story_p_63a95cd5f3805708227a5a64-1672997326.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 24,
+			"image": "https://img0.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 25,
+			"image": "https://img2.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 26,
+			"image": "https://img3.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 27,
+			"image": "https://img0.junaroad.com/stories/story_p_63a937aff47b700829f6b5e2-1672991478.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 28,
+			"image": "https://img2.junaroad.com/stories/story_p_63b6818713cb38081c3a1717-1673861012.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 29,
+			"image": "https://img3.junaroad.com/stories/story_p_63ac0811fd1d3c5cf6441b5c-1672779375.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 30,
+			"image": "https://img0.junaroad.com/stories/story_p_63a5712cadb8b82d0e11d5d1-1672991666.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 31,
+			"image": "https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 123,
+			"likes": "11k"
+		},
+		{
+			"id": 32,
+			"image": "https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 33,
+			"image": "https://img2.junaroad.com/stories/story_p_63a95cd5f3805708227a5a64-1672997326.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 34,
+			"image": "https://img0.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 35,
+			"image": "https://img2.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 36,
+			"image": "https://img3.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 37,
+			"image": "https://img0.junaroad.com/stories/story_p_63a937aff47b700829f6b5e2-1672991478.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 38,
+			"image": "https://img2.junaroad.com/stories/story_p_63b6818713cb38081c3a1717-1673861012.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 39,
+			"image": "https://img3.junaroad.com/stories/story_p_63ac0811fd1d3c5cf6441b5c-1672779375.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 40,
+			"image": "https://img0.junaroad.com/stories/story_p_63a5712cadb8b82d0e11d5d1-1672991666.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 41,
+			"image": "https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 123,
+			"likes": "11k"
+		},
+		{
+			"id": 42,
+			"image": "https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 43,
+			"image": "https://img2.junaroad.com/stories/story_p_63a95cd5f3805708227a5a64-1672997326.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 44,
+			"image": "https://img0.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 45,
+			"image": "https://img2.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg",
+			"designer": "kanika.crystal",
+			"followers": 432,
+			"likes": "11k"
+		},
+		{
+			"id": 46,
+			"image": "https://img3.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 47,
+			"image": "https://img0.junaroad.com/stories/story_p_63a937aff47b700829f6b5e2-1672991478.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 48,
+			"image": "https://img2.junaroad.com/stories/story_p_63b6818713cb38081c3a1717-1673861012.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 49,
+			"image": "https://img3.junaroad.com/stories/story_p_63ac0811fd1d3c5cf6441b5c-1672779375.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		},
+		{
+			"id": 50,
+			"image": "https://img0.junaroad.com/stories/story_p_63a5712cadb8b82d0e11d5d1-1672991666.jpeg",
+			"designer": "anujabofficial",
+			"followers": 546,
+			"likes": "11k"
+		}
+	]
+}
