@@ -1,0 +1,56 @@
+.card {
+	width: 25%;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 2px 5px 5px 5px;
+}
+h6 {
+	padding: 0 0 0 5px;
+}
+.card img {
+	width: 100%;
+	margin-top: -20px;
+}
+.logo {
+	margin-top: -30px;
+	margin-left: 230px;
+}
+.logo svg {
+	background-color: white;
+	font-size: 15px;
+	/* border: 1px solid red; */
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding: 8px;
+}
+.logo svg:nth-child(1) {
+	margin-right: 20px;
+	color: red;
+}
+.logo svg:nth-child(2) {
+	color: green;
+}
+.bottom {
+	display: flex;
+}
+.author {
+	/* border: 1px solid blue; */
+	width: 80%;
+	margin-top: -18px;
+	margin-left: 5px;
+}
+.author p {
+	font-size: 8px;
+}
+.share {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 0 25px 0 40px;
+	margin-top: -10px;
+	/* border: 1px solid red; */
+}
+.share p {
+	font-size: 8px;
+}
