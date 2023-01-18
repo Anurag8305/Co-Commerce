@@ -24,5 +24,4 @@ const AllRoutes = () => {
     </div>
   );
 };
-
 export default AllRoutes;
