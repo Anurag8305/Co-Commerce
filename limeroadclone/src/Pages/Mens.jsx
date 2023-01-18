@@ -2,7 +2,8 @@ import React from 'react'
 
 const Mens = () => {
   return (
-    <div>Mens</div>
+    <div>
+    </div>
   )
 }
 
