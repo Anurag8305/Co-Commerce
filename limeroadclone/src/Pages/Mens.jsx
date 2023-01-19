@@ -27,18 +27,18 @@ import {
   Card,
   CardBody,
   Heading,
-  Image
+  Image,
 } from "@chakra-ui/react";
 import "./Mens.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { useEffect } from "react";
-import {useDispatch, useSelector} from "react-redux"
-import { getData } from "../Redux/action";
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "../Redux/Mens/action";
 import { useLocation, useSearchParams } from "react-router-dom";
 const Mens = () => {
-  const dispatch = useDispatch()
-  const Mens  =  useSelector((store)=> store.Mens)
+  const dispatch = useDispatch();
+  const Mens = useSelector((store) => store.MensReducer.Mens);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
   const [isLargerThan768] = useMediaQuery("(min-width: 485px)");
@@ -49,41 +49,38 @@ const Mens = () => {
   const [Brand, setBrand] = useState("1");
   const [Size, setSize] = useState("1");
   const [Category, setCategory] = useState("1");
-  const [noofElements , setnoofElements] =useState(6)
-  const loaction = useLocation()
- console.log(loaction)
-  const [searchParams , setSearchParams] = useSearchParams()
-  const initialSort = searchParams.getAll("sort")
-  const [sort , setSort] = useState(initialSort[0]||"")
+  const [noofElements, setnoofElements] = useState(6);
+  const loaction = useLocation();
+  console.log(loaction);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialSort = searchParams.getAll("sort");
+  const [sort, setSort] = useState(initialSort[0] || "");
 
+  const handleSort = (e) => {
+    setSort(e.target.value);
+  };
 
-  const handleSort = (e)=>{
-    setSort(e.target.value)
-  }
-
-  const slice = Mens.slice(0 , noofElements)
-  const loadMore = () =>{
-    setnoofElements(noofElements + 3)
-  }
-  useEffect(()=>{
-    let params = {}
-   sort && (params.sort = sort);
-   setSearchParams(params)
-    if( loaction ||  Mens.length === 0){
-      const sortBy =  searchParams.get("sort")
+  const slice = Mens.slice(0, noofElements);
+  const loadMore = () => {
+    setnoofElements(noofElements + 3);
+  };
+  useEffect(() => {
+    let params = {};
+    sort && (params.sort = sort);
+    setSearchParams(params);
+    if (loaction || Mens.length === 0) {
+      const sortBy = searchParams.get("sort");
       const getMensParams = {
-        params:{
-          _sort:sortBy && "price",
-          _order:sortBy,
+        params: {
+          _sort: sortBy && "price",
+          _order: sortBy,
         },
-      }
-      console.log("random")
-      dispatch(getData(getMensParams))
-      console.log("random2")
+      };
+      console.log("random");
+      dispatch(getData(getMensParams));
+      console.log("random2");
     }
-    
-  },[loaction.search,sort,setSearchParams])
-
+  }, [loaction.search, sort, setSearchParams]);
 
   return (
     <div>
@@ -146,10 +143,22 @@ const Mens = () => {
                                     <Radio value="2">New</Radio>
                                     <Radio value="3">Discounts</Radio>
                                     <div onChange={handleSort}>
-                          <Radio value="desc" name="sortBy" defaultChecked={sort === "desc"}>High Price</Radio>
-                          <br/>
-                          <Radio value="asc" name="sortBy"  defaultChecked={sort === "asc"}>Low Price</Radio>
-                          </div>
+                                      <Radio
+                                        value="desc"
+                                        name="sortBy"
+                                        defaultChecked={sort === "desc"}
+                                      >
+                                        High Price
+                                      </Radio>
+                                      <br />
+                                      <Radio
+                                        value="asc"
+                                        name="sortBy"
+                                        defaultChecked={sort === "asc"}
+                                      >
+                                        Low Price
+                                      </Radio>
+                                    </div>
                                   </Stack>
                                 </RadioGroup>
                               </AccordionPanel>
@@ -294,7 +303,11 @@ const Mens = () => {
             </div>
           ) : null}
           {!ismaxThan768 ? null : (
-            <Box position="fixed" width={["40%", "40%", "30%", "23%"]} h="700vh">
+            <Box
+              position="fixed"
+              width={["40%", "40%", "30%", "23%"]}
+              h="700vh"
+            >
               <Box
                 className="sideHead"
                 textAlign="left"
@@ -337,9 +350,21 @@ const Mens = () => {
                           <Radio value="2">New</Radio>
                           <Radio value="3">Discounts</Radio>
                           <div onChange={handleSort}>
-                          <Radio value="desc" name="sortBy" defaultChecked={sort === "desc"}>High Price</Radio>
-                          <br/>
-                          <Radio value="asc" name="sortBy"  defaultChecked={sort === "asc"}>Low Price</Radio>
+                            <Radio
+                              value="desc"
+                              name="sortBy"
+                              defaultChecked={sort === "desc"}
+                            >
+                              High Price
+                            </Radio>
+                            <br />
+                            <Radio
+                              value="asc"
+                              name="sortBy"
+                              defaultChecked={sort === "asc"}
+                            >
+                              Low Price
+                            </Radio>
                           </div>
                         </Stack>
                       </RadioGroup>
@@ -465,39 +490,50 @@ const Mens = () => {
             </Box>
           )}
 
-          <Box ml={[0,300,300,350]} width={["60%", "60%", "70%", "77%"]}>
-          <Grid ml="50px"mt="10" gap={5}
-           templateColumns={[
-            "repeat(1, 1fr)",
-            "repeat(1, 1fr)",
-            "repeat(2, 1fr)",
-            "repeat(3, 1fr)",
-          ]}
-          >
-        
-            {slice.length > 0 && slice.map((item)=>(
-               <GridItem >
-                
-               <Card  maxW="sm">
-                 <CardBody >
-                   <Image
-                     src={item.img1}
-                     alt="Green double couch with wooden legs"
-                     borderRadius="lg"
-                   />
-                   <Stack mt="6" spacing="3">
-                     <Heading size="md">{item.title}</Heading>
-                     <Text color="gray">Rs.{item.price}</Text>
-                   </Stack>
-                 </CardBody>
-               </Card>
-               
-             </GridItem>
-            ))}
-          </Grid>
-          <Box align="center" p={10}>
-          <Button onClick={()=> loadMore()}  _hover={{bg: "RGBA(0, 0, 0, 0.24)"}} size='lg' h={50} variant="outline"  color="black" bg="RGBA(0, 0, 0, 0.04)" >Load more</Button>
-          </Box>
+          <Box ml={[0, 300, 300, 350]} width={["60%", "60%", "70%", "77%"]}>
+            <Grid
+              ml="50px"
+              mt="10"
+              gap={5}
+              templateColumns={[
+                "repeat(1, 1fr)",
+                "repeat(1, 1fr)",
+                "repeat(2, 1fr)",
+                "repeat(3, 1fr)",
+              ]}
+            >
+              {slice.length > 0 &&
+                slice.map((item) => (
+                  <GridItem>
+                    <Card maxW="sm">
+                      <CardBody>
+                        <Image
+                          src={item.img1}
+                          alt="Green double couch with wooden legs"
+                          borderRadius="lg"
+                        />
+                        <Stack mt="6" spacing="3">
+                          <Heading size="md">{item.title}</Heading>
+                          <Text color="gray">Rs.{item.price}</Text>
+                        </Stack>
+                      </CardBody>
+                    </Card>
+                  </GridItem>
+                ))}
+            </Grid>
+            <Box align="center" p={10}>
+              <Button
+                onClick={() => loadMore()}
+                _hover={{ bg: "RGBA(0, 0, 0, 0.24)" }}
+                size="lg"
+                h={50}
+                variant="outline"
+                color="black"
+                bg="RGBA(0, 0, 0, 0.04)"
+              >
+                Load more
+              </Button>
+            </Box>
           </Box>
         </Flex>
       </Box>
