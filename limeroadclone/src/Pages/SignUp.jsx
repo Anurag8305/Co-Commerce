@@ -25,6 +25,8 @@ import {
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { AddUser } from "../Redux/Auth/auth.action";
 
 const SignUp = () => {
   const toast = useToast();
@@ -36,9 +38,9 @@ const SignUp = () => {
     mobile: "",
     password: "",
   });
-  //
-  //   const dispatch = useDispatch();
-  //
+
+  const dispatch = useDispatch();
+
   const navigateTo = useNavigate();
   const GoTo = (path) => {
     console.log("path", path);
@@ -55,7 +57,7 @@ const SignUp = () => {
   const SignupUser = () => {
     try {
       console.log("add", formData);
-      //   dispatch(AddUser(formData));
+      dispatch(AddUser(formData));
       toast({
         title: "Welcome to SignIn-Page.",
         description: "To Move Ahead You Have To SignIn First .",
@@ -63,7 +65,7 @@ const SignUp = () => {
         duration: 6000,
         isClosable: true,
       });
-      navigateTo("/signin");
+      navigateTo("/login");
     } catch (error) {
       console.log("error", error);
     }
@@ -185,7 +187,7 @@ const SignUp = () => {
               <Text align={"center"}>
                 Already a user?{" "}
                 <Link color={"blue.400"} onClick={() => GoTo("/login")}>
-                  SignIn
+                  Login
                 </Link>
               </Text>
             </Stack>
