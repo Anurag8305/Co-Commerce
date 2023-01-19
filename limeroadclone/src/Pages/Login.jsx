@@ -16,9 +16,11 @@ import {
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { SetUserDataAfterLogin } from "../Redux/Auth/auth.action";
 const Login = () => {
   const toast = useToast();
-
+  const dispatch = useDispatch();
   const navigateTo = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -45,6 +47,7 @@ const Login = () => {
   };
   const Loginn = () => {
     try {
+      console.log("login called");
       let users = axios
         .get("https://unit-5backend.onrender.com/Users")
         .then((response) => {
@@ -61,7 +64,7 @@ const Login = () => {
           ) {
             navigateTo("/adminPage");
           } else if (login) {
-            // dispatch(SetUserDataAfterLogin(login));
+            dispatch(SetUserDataAfterLogin(login));
             toast({
               title: "Welcome to Co-Commerce.",
               description: "We are Happy To serve you.",
