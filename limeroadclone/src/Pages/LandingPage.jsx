@@ -1,8 +1,8 @@
 import React from "react";
-import "./LandingPage.css";
 import Typewriter from "typewriter-effect";
 import logo from "../Images/logo.png";
 import { Link } from "react-router-dom";
+import "./LandingPage.css";
 
 const LandingPage = () => {
 	return (

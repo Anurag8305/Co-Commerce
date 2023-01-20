@@ -1,9 +1,14 @@
 import React from "react";
+import LandingPageCard from "../Components/LandingPageCard";
+import Navbar from "../Components/Navbar";
 
 const HomePage = () => {
 	return (
 		<div>
-			<h1>HomePage</h1>
+			<Navbar />
+			<LandingPageCard />
+			<LandingPageCard />
+			<LandingPageCard />
 		</div>
 	);
 };
