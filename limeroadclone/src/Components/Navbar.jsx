@@ -9,11 +9,11 @@ import { Image,Heading,HStack,Text,Spacer } from "@chakra-ui/react";
 // import { AuthContext } from '../../Context/AuthContextProvider'
 // import { useContext } from "react";
 // import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 /* #262726 #fafafa */
 const Navbar = () => {
-
+const navigateto=useNavigate()
 //   function accountNameDrop() {
 //     document.getElementById("accountdrop").classList.toggle("show");
 //   }
@@ -793,7 +793,21 @@ const Navbar = () => {
                 </button>
               </li>
             
+            
             </li>
+            <li class="nav-item">
+                <button onClick={navigateto("/cart")}>
+
+                <a href="#">CART</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button onClick={navigateto("/login")} >
+
+                <a href="#">PROFILE</a>
+                </button>
+              </li>
+            
           </ul>
         </div>
       </div>

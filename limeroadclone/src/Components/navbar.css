@@ -118,7 +118,6 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .navbar-nav {
-    border: 1px solid blue;
     list-style-type: none;
     display: flex;
     gap: 10px;
@@ -242,3 +241,6 @@
       display: block;
     }
   }
+.navbar-bottom{
+  border: 1px solid green;
+}
