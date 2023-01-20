@@ -21,7 +21,7 @@
   }
   .ad-store-left > a {
     font-weight: 600;
-    color: #faa8a8;
+    color: #fafafa;
     font-size: 0.8rem;
   }
   .ad-store-right {
@@ -96,6 +96,7 @@
     margin-top: 2rem;
     width: 10rem;
     right: 0;
+
   }
   .accountName-dropDown > a:hover {
     font-weight: 600;
@@ -117,11 +118,10 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .navbar-nav {
+    border: 1px solid blue;
     list-style-type: none;
-    margin: 0;
-    padding: 0.5rem 5rem;
     display: flex;
-    gap: 2rem;
+    gap: 10px;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;

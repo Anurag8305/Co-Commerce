@@ -112,7 +112,7 @@ const Navbar = () => {
             <li class="nav-item has-dropdown">
               <li class="nav-item">
                 <button>
-                <Link to='/makeup'>women</Link>
+                <Link to='/makeup'>WOMEN</Link>
                 </button>
               </li>
               <div className="dropdown">
@@ -543,43 +543,154 @@ const Navbar = () => {
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
+                <div>
+                    <a href="#" className="dropdown-content-heading">
+                     Boys
+                    </a>
+                    <button>
+                      <a href="#">T-shirts</a>
+                    </button>
+                    <button>
+                      <a href="#"> Shirts</a>
+                    </button>
+                    <button>
+                      <a href="#">Bottom wear</a>
+                    </button>
+                    <button>
+                      <a href="#">Ethnic wear</a>
+                    </button>
+                    <button>
+                      <a href="#">Sweater & Cardigans</a>
+                    </button>
+                    <button>
+                      <a href="#">Coat and Jackets</a>
+                    </button>
+                    <button>
+                      <a href="#">Innerwear and Nightwear</a>
+                    </button>
+                    <button>
+                      <a href="#">twin Sets & Dungrees</a>
+                    </button>
+                    <button>
+                      <a href="#">Shop by Age</a>
+                    </button>
+                    <button>
+                      <a href="#">0-2 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">2-6 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">6-12 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">12-16 Years</a>
+                    </button>
+                  </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                      LIPS
+                     Girls
                     </a>
                     <button>
-                      <a href="#">Lipstick</a>
+                      <a href="#">Dresses & Frocks</a>
                     </button>
                     <button>
-                      <a href="#">Crayon Lipstick</a>
+                      <a href="#">Tees & Tops</a>
                     </button>
                     <button>
-                      <a href="#">Liquid Lipstick</a>
+                      <a href="#">Bottom wear</a>
                     </button>
+                    <button>
+                      <a href="#">Ethnic Wear</a>
+                    </button>
+                    <button>
+                      <a href="#">Seater & Cardigans</a>
+                    </button>
+                    <button>
+                      <a href="#">Coats & Jackets</a>
+                    </button>
+                    <button>
+                      <a href="#">Twin Sets & Jump Suits</a>
+                    </button>
+                    <button>
+                      <a href="#">InnerWear & Nightwear</a>
+                    </button>
+                    <button>
+                      <a href="#">shop By Age</a>
+                    </button>
+                    <button>
+                      <a href="#">0-2 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">2-6 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">6-12 Years</a>
+                    </button>
+                    <button>
+                      <a href="#">12-16 Years</a>
+                    </button>
+            
+                  </div>
+                  <div>
                     <a href="#" className="dropdown-content-heading">
-                      LIPS
+                     Footwear
                     </a>
                     <button>
-                      <a href="#">Hi-Shine Lipstick</a>
+                      <a href="#">Sandals & Floaters</a>
                     </button>
                     <button>
-                      <a href="#">Matte Lipstick</a>
+                      <a href="#">Slippers & Flip Flops</a>
                     </button>
                     <button>
-                      <a href="#">Lip Gloss</a>
+                      <a href="#">Casual Shoes</a>
                     </button>
+                    <button>
+                      <a href="#">Sport Shoes</a>
+                    </button>
+                    <button>
+                      <a href="#">Formal Shoes</a>
+                    </button>
+                    <button>
+                      <a href="#">Accessories</a>
+                    </button>
+                    <button>
+                      <a href="#">Bed & Bath</a>
+                    </button>
+                  
+                  </div>
+                  <div>
                     <a href="#" className="dropdown-content-heading">
-                      LIPS
+                     Brands
                     </a>
                     <button>
-                      <a href="#">Lip Liner</a>
+                      <a href="#">Giny & Jony</a>
                     </button>
                     <button>
-                      <a href="#">Lip Balm</a>
+                      <a href="#">US Polo Assn Kids</a>
                     </button>
                     <button>
-                      <a href="#">Lip Glitter</a>
+                      <a href="#">Monte Carlo</a>
                     </button>
+                    <button>
+                      <a href="#">Cherokee</a>
+                    </button>
+                    <button>
+                      <a href="#">Li'l Tomatoes</a>
+                    </button>
+                    <button>
+                      <a href="#">NeuVin</a>
+                    </button>
+                    <button>
+                      <a href="#">Under Fourteen Only</a>
+                    </button>
+                    <button>
+                      <a href="#">Tales & Stories</a>
+                    </button>
+                    <button>
+                      <a href="#">Beebay</a>
+                    </button>
+                    
                   </div>
                 </div>
               </div>
@@ -589,104 +700,87 @@ const Navbar = () => {
               <li class="nav-item">
                 <button>
 
-                <a href="#">SANITIZING CARE</a>
+                <a href="#">HOME</a>
                 </button>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
+                <div>
+                    <a href="#" className="dropdown-content-heading">
+                     Bed Linen & Furnishing
+                    </a>
+                    <button>
+                      <a href="#">Bed Sheet Sets</a>
+                    </button>
+                    <button>
+                      <a href="#"> Quilts & Comforters</a>
+                    </button>
+                    <button>
+                      <a href="#">Blankets</a>
+                    </button>
+                    <button>
+                      <a href="#">Bed Covers</a>
+                    </button>
+                    <button>
+                      <a href="#">Pillow Covers</a>
+                    </button>
+                    <button>
+                      <a href="#">Curtains</a>
+                    </button>
+                    
+                  </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                    SANITIZING CARE
+                     Bath
                     </a>
                     <button>
-                      <a href="#">Lipstick</a>
+                      <a href="#">Towels</a>
                     </button>
                     <button>
-                      <a href="#">Crayon Lipstick</a>
+                      <a href="#"> Bath Mats</a>
                     </button>
                     <button>
-                      <a href="#">Liquid Lipstick</a>
+                      <a href="#">Shower Curtains</a>
                     </button>
                     <button>
-                      <a href="#">Hi-Shine Lipstick</a>
+                      <a href="#">Furniture</a>
                     </button>
-                    <button>
-                      <a href="#">Matte Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Lip Gloss</a>
-                    </button>
+                    
                   </div>
-                  <div className="dropdown-content-imageProduct" style={{display:'flex',flexDirection:'row',gap:'2rem',marginLeft:'auto'}}>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Game-over-Germs_2.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
+                  <div>
+                    <a href="#" className="dropdown-content-heading">
+                     Decor
                     </a>
-                    </center>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Game-over-Germs_2.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Game-over-Germs_2.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Game-over-Germs_2.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
+                    <button>
+                      <a href="#" className="dropdown-content-heading">Household Accessories</a>
+                    </button>
+                    <button>
+                      <a href="#" className="dropdown-content-heading"> Kitchen</a>
+                    </button>
+                    
                   </div>
+                  <div>
+                    <a href="#" className="dropdown-content-heading">
+                     Brands
+                    </a>
+                    <button>
+                      <a href="#" >Belia Casa</a>
+                    </button>
+                    <button>
+                      <a href="#" > Cortina</a>
+                    </button>
+                    <button>
+                      <a href="#" > Bianca</a>
+                    </button>
+                    <button>
+                      <a href="#" > Jeby</a>
+                    </button>
+                    <button>
+                      <a href="#" > Saral Home</a>
+                    </button>
+                    
+                  </div>
+              
                 </div>
               </div>
             </li>
@@ -695,131 +789,10 @@ const Navbar = () => {
               <li class="nav-item">
                 <button>
 
-                <a href="#">COLLECTION</a>
+                <a href="#">OFFERS</a>
                 </button>
               </li>
-              <div className="dropdown">
-                <div className="dropdown-content">
-                  <div>
-                    <a href="#" className="dropdown-content-heading">
-                    SHOP BY COLLECTION
-                    </a>
-                    <button>
-                      <a href="#">Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Crayon Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Liquid Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Hi-Shine Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Matte Lipstick</a>
-                    </button>
-                    <button>
-                      <a href="#">Lip Gloss</a>
-                    </button>
-                  </div>
-                  <div className="dropdown-content-imageProduct" style={{display:'flex',flexDirection:'row',gap:'2rem',marginLeft:'auto'}}>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Tile-1-Soiree_1.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Tile-1-Soiree_1.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
-                    <center>
-                    <a href="#">
-                      <Image
-                        src="https://files.myglamm.com/site-images/400x400/Tile-1-Soiree_1.jpg"
-                        boxSize="150px"
-                        objectFit="cover"
-                      />
-                      <Heading size='xs'>White feather</Heading>
-                      <p>For hair fall control</p>
-                      <HStack>
-                        <Spacer />
-                        <Text as='b'>195</Text>
-                        <Text as='s' color='BlackAlpha 400'>299</Text>
-                        <Spacer />
-                      </HStack>
-                    </a>
-                    </center>
-                  </div>
-                </div>
-              </div>
-            </li>
-            {/* ============== 7th Nav Item ==============  */}
-            <li class="nav-item has-dropdown">
-              <li class="nav-item">
-                <button>
-
-                <a href="#">REWARDS</a>
-                </button>
-              </li>
-              <div className="dropdown">
-                <div className="dropdown-content" style={{height:'12rem'}}>
-                </div>
-              </div>
-            </li>
-            {/* ============== 8th Nav Item ==============  */}
-            <li class="nav-item has-dropdown">
-              <li class="nav-item">
-                <button>
-
-                <a href="#">COLLECTION</a>
-                </button>
-              </li>
-              <div className="dropdown">
-                <div className="dropdown-content"  style={{height:'12rem'}}>
-                  <div>
-                    <a href="#" className="dropdown-content-heading">
-                    WHITE FEATHER STUDIO
-                    </a>
-                    <button>
-                      <a href="#">Lipstick</a>
-                    </button>
-                  </div>
-                  
-                </div>
-              </div>
-            </li>
-            {/* ============== 8th Nav Item ==============  */}
-            <li class="nav-item">
-              <button>
-
-              <a href="#">OFFER</a>
-              </button>
+            
             </li>
           </ul>
         </div>
