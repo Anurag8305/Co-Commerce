@@ -35,7 +35,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../Redux/Mens/action";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 const Mens = () => {
   const dispatch = useDispatch();
   const Mens = useSelector((store) => store.MensReducer.Mens);
@@ -505,6 +505,7 @@ const Mens = () => {
               {slice.length > 0 &&
                 slice.map((item) => (
                   <GridItem>
+                      <Link to={`/singleproduct/${item.id}`}>
                     <Card maxW="sm">
                       <CardBody>
                         <Image
@@ -518,6 +519,7 @@ const Mens = () => {
                         </Stack>
                       </CardBody>
                     </Card>
+                    </Link>
                   </GridItem>
                 ))}
             </Grid>
