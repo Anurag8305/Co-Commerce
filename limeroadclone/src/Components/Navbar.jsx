@@ -28,7 +28,7 @@ const Navbar = () => {
             <li class="nav-item has-dropdown">
               <li class="nav-item">
                 <button>
-                <Link to='/makeup'>WOMEN</Link>
+                <Link to='/men'>WOMEN</Link>
                 </button>
               </li>
               <div className="dropdown">
@@ -257,10 +257,12 @@ const Navbar = () => {
              {/* ============== 3rd Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/men"}>
                 <button>
 
-                <a className="padding" href="#">MEN</a>
+                <div className="padding" href="#">MEN</div>
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -452,10 +454,14 @@ const Navbar = () => {
              {/* ============== 4th Nav Item ==============  */}
              <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/kids"}>
                 <button>
+                
 
-                <a className="kid" href="#">KIDS</a>
+                <div className="kid" href="#">KIDS</div>
+               
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -614,10 +620,12 @@ const Navbar = () => {
             {/* ============== 5th Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/homepage"}>
                 <button>
 
-                <a href="#">HOME</a>
+                <div href="#">HOME</div>
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -714,29 +722,33 @@ const Navbar = () => {
             <li class="nav-item">
                 <button className="scrap" >
                 <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.KrxFzeVDGy0_He8JTFntoQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
-                <a className="scrap" href="#">SCRAPBOOK</a>
+                <div className="scrap" href="#">SCRAPBOOK</div>
                 </button>
               </li>
               <li class="nav-item">
                 <button>
                 <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.qLQCPaWxeYifioMDyQUoJwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
 
-                <a className="scrap" href="#">SEARCH</a>
+                <div className="scrap" href="#">SEARCH</div>
                 </button>
               </li>
             <li class="nav-item">
+            <Link to={"/cart"}>
                 <button  >
                 <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.hy2ZHgfL8xlOQUkJfe-hVQHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
 
-                <a className="scrap" href="#">CART</a>
+                <div className="scrap" href="#">CART</div>
                 </button>
+                </Link>
               </li>
               <li class="nav-item">
+              <Link to={"/login"}>
                 <button >
                 <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.8pQGc1uvCGFkeniunEv1rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
 
-                <a className="scrap" href="#">PROFILE</a>
+                <div className="scrap" href="#">PROFILE</div>
                 </button>
+                </Link>
               </li>
             
           </ul>
