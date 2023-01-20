@@ -9,7 +9,6 @@
   .ad-store-left,
   .ad-store-right {
     display: flex;
-    background-color: #fee8e8;
     align-items: center;
   }
   .ad-store {
@@ -161,8 +160,9 @@
     pointer-events: auto;
   }
   .dropdown-content-heading {
-    color: #faa8a8;
+    color: black;
     font-weight: 800;
+    font-size: 20px;
   }
   .dropdown-content-heading:hover {
     color: #262726;
@@ -173,6 +173,7 @@
     text-align: left;
     font-weight: bold;
     width: fit-content;
+    gap: 10px;
   }
   .dropdown-content > div > button > a::before,
   .nav-item button > a::before {
@@ -182,7 +183,6 @@
     right: 0;
     bottom: 0;
     height: 0.15rem;
-    background-color: #faa8a8;
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
   }
@@ -241,6 +241,26 @@
       display: block;
     }
   }
-.navbar-bottom{
-  border: 1px solid green;
+.scrap {
+  font-weight: normal;
+  font-size: 14px;
+  color: rgb(94, 89, 89);}
+.lime{
+  font-style: italic;
+  font-size: 30px;
+}
+.dropdown-content-heading{
+  font-weight: bold;
+ font-size: 18px;
+ background-color: rgb(164, 159, 159);
+}
+.dropdown-content a{
+ 
+  font-weight: normal;
+  font-size: 17px;
+ 
+
+}
+.color {
+  color: red;
 }

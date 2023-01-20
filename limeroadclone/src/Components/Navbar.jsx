@@ -5,107 +5,23 @@ import { IoMdArrowDropdown, IoMdClose } from "react-icons/io";
 import { HiGift } from "react-icons/hi";
 import { BsPerson, BsBag } from "react-icons/bs";
 import { Image,Heading,HStack,Text,Spacer } from "@chakra-ui/react";
-// import { AppContext } from '../../Context/AppContextProvider'
-// import { AuthContext } from '../../Context/AuthContextProvider'
-// import { useContext } from "react";
-// import { useEffect } from "react";
+
 import { Link,useNavigate } from "react-router-dom";
 
-/* #262726 #fafafa */
 const Navbar = () => {
-const navigateto=useNavigate()
-//   function accountNameDrop() {
-//     document.getElementById("accountdrop").classList.toggle("show");
-//   }
-//    handleSignout =  () =>{
-   
-//   } 
-// onOpen=()=>{
+  const navigateto=useNavigate()
 
-// } 
-//   const {user,logOut} = useContext(AuthContext)
-//   const { isOpen, onOpen, onClose,isLogin,setIsLogin } = useContext(AppContext)
-//   useEffect(()=>{
-//     if(user != null){
-//       onClose()
-//     }
-//   },[user])
-//   const checkVal = user?.email || user
-//  checkVal=()=>{
-
-// }
-
-//   const adBanner = () =>{
-//     document.getElementById("ad-store").classList.toggle("hide");
-//   }
   return (
     <>
       <div className="ad-store" id="ad-store">
-        {/* <div className="ad-store-left">
-          <HiGift color="#faa8a8" />
-          <p>Pick Any Product at Rs 199</p>
-          <a href="#">SHOP NOW</a>
-        </div> */}
-        {/* <div className="ad-store-right">
-          <BiStoreAlt />
-          <p>White Feather Store</p>
-          <IoMdClose style={{color:'#db1d65',fontSize:'1.2rem',cursor:'pointer'}} onClick={adBanner} />
-        </div> */}
-          {/* <IoMdClose className="adBannerMobileIcon" style={{color:'#db1d65',fontSize:'1.2rem',cursor:'pointer'}} onClick={adBanner} />
-      </div>
-      <div className="navbar">
-        <div className="navbar-top">
-        <Link to='/'>
-          <Image
-            src="https://i.ibb.co/Jtvk4Lf/White-Feather.png"
-            alt="White-Feather-Logo"
-            boxSize="90px"
-            objectFit="cover"
-          /> */}
-          {/* </Link>
-          <div className="inputDiv">
-            <BiSearchAlt2 color="#a3a8b1" size="1.6rem" />
-            <input
-              type="text"
-              name="search"
-              placeholder="Find Lipstick, Eyeliner, Makeup Tutorial, etc"
-            />
-          </div> */}
-          {/* <div className="navbar-icon">
-            <Link to='/cart'>
-            <BsBag color="#fafafa" size="1.5rem" className="bagIcon" />
-            </Link>
-            <div className="lineDiv"></div>
-            {
-              checkVal?(
-              <div className="accountName">
-                <div>
-                  <button id="accountName-btn" onClick={accountNameDrop}>
-                  {
-                    checkVal
-                  }
-                  <IoMdArrowDropdown className="accountName-icon" />
-                  </button>
-                </div>
-              <div className="accountName-dropDown" id="accountdrop">
-                <a href="#">My Profile</a>
-                <a href="#">My Orders</a>
-                <a href="#">My Dashboard</a>
-                <button onClick={handleSignout}>Sign Out</button>
-              </div>
-              </div>
-              ):(<BsPerson color="#fafafa" size="1.5rem" onClick={onOpen} style={{cursor:'pointer'}} />)
-            }
-            
-          </div>
-        </div> */}
+        
         <div className="navbar-bottom">
           <ul class="navbar-nav">
            {/* ============== 1st Nav Item ==============  */}
             <li class="nav-item">
-              <button>
+              <button >
 
-              <Link to="/">LimeRoad</Link>
+              <Link className="lime" to="/">LimeRoad</Link>
               </button>
             </li>
              {/* ============== 2nd Nav Item ==============  */}
@@ -117,7 +33,7 @@ const navigateto=useNavigate()
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
-                  <div>
+                  <div >
                     <a href="#" className="dropdown-content-heading">
                      ETHNIC WEAR
                     </a>
@@ -161,7 +77,7 @@ const navigateto=useNavigate()
                       <a href="#">Cloaks & Abaya</a>
                     </button>
                     <button>
-                      <a href="#">Bags & wallets</a>
+                      <a className="dropdown-content-heading" href="#">Bags & wallets</a>
                     </button>
                   </div>
                   <div>
@@ -225,7 +141,7 @@ const navigateto=useNavigate()
                       <a href="#">Shoes</a>
                     </button>
                     <button>
-                      <a href="#">Lingerie & Sleepwear</a>
+                      <a className="dropdown-content-heading" href="#">Lingerie & Sleepwear</a>
                     </button>
                     <button>
                       <a href="#">Bra</a>
@@ -246,10 +162,10 @@ const navigateto=useNavigate()
                       <a href="#">Camisoles & Thermals</a>
                     </button>
                     <button>
-                      <a href="#">Belts & Watches</a>
+                      <a className="dropdown-content-heading" href="#">Belts & Watches</a>
                     </button>
                     <button>
-                      <a href="#">Sunglasses & Mats</a>
+                      <a className="dropdown-content-heading" href="#">Sunglasses & Mats</a>
                     </button>
                     
 
@@ -265,7 +181,7 @@ const navigateto=useNavigate()
                       <a href="#">Imiation Jwellery</a>
                     </button>
                     <button>
-                      <a href="#">Earings</a>
+                      <a className="dropdown-content-heading" href="#">Earings</a>
                     </button>
                     <button>
                       <a href="#">Necklace & Pendants</a>
@@ -296,7 +212,7 @@ const navigateto=useNavigate()
                       <a href="#">Boots</a>
                     </button>
                     <button>
-                      <a href="#">Beauty & personal Care</a>
+                      <a className="dropdown-content-heading"  href="#">Beauty & personal Care</a>
                     </button>
                   </div>
                   <div>
@@ -343,7 +259,7 @@ const navigateto=useNavigate()
               <li class="nav-item">
                 <button>
 
-                <a href="#">MEN</a>
+                <a className="padding" href="#">MEN</a>
                 </button>
               </li>
               <div className="dropdown">
@@ -374,7 +290,7 @@ const navigateto=useNavigate()
                       <a href="#">Sweaters & Sweatshirts</a>
                     </button>
                     <button>
-                      <a href="#">Bottom Wear</a>
+                      <a className="dropdown-content-heading" href="#">Bottom Wear</a>
                     </button>
                     <button>
                       <a href="#">Jeans</a>
@@ -409,7 +325,7 @@ const navigateto=useNavigate()
                       <a href="#">Ethnic Bottom Wear</a>
                     </button>
                     <button>
-                      <a href="#">Sports Wear</a>
+                      <a className="dropdown-content-heading" href="#">Sports Wear</a>
                     </button>
                     <button>
                       <a href="#">T-shirts</a>
@@ -424,7 +340,7 @@ const navigateto=useNavigate()
                       <a href="#">Track suits</a>
                     </button>
                     <button>
-                      <a href="#">Fragnces</a>
+                      <a className="dropdown-content-heading" href="#">Fragnces</a>
                     </button>
             
                   </div>
@@ -451,13 +367,13 @@ const navigateto=useNavigate()
                       <a href="#">Socks</a>
                     </button>
                     <button>
-                      <a href="#">Belts,Bags & Wallets</a>
+                      <a className="dropdown-content-heading" href="#">Belts,Bags & Wallets</a>
                     </button>
                     <button>
-                      <a href="#">Watches</a>
+                      <a className="dropdown-content-heading" href="#">Watches</a>
                     </button>
                     <button>
-                      <a href="#">Sunglasses & Frames</a>
+                      <a className="dropdown-content-heading" href="#">Sunglasses & Frames</a>
                     </button>
                   
                   </div>
@@ -484,7 +400,7 @@ const navigateto=useNavigate()
                       <a href="#">Headphones & Speakers</a>
                     </button>
                     <button>
-                      <a href="#">Innerwear </a>
+                      <a className="dropdown-content-heading" href="#">Innerwear </a>
                     </button>
                     <button>
                       <a href="#">Briefs </a>
@@ -496,7 +412,7 @@ const navigateto=useNavigate()
                       <a href="#">Vests</a>
                     </button>
                     <button>
-                      <a href="#">Personal Grooming</a>
+                      <a className="dropdown-content-heading" href="#">Personal Grooming</a>
                     </button>
                   </div>
                   <div>
@@ -538,7 +454,7 @@ const navigateto=useNavigate()
               <li class="nav-item">
                 <button>
 
-                <a href="#">KIDS</a>
+                <a className="kid" href="#">KIDS</a>
                 </button>
               </li>
               <div className="dropdown">
@@ -572,7 +488,7 @@ const navigateto=useNavigate()
                       <a href="#">twin Sets & Dungrees</a>
                     </button>
                     <button>
-                      <a href="#">Shop by Age</a>
+                      <a className="dropdown-content-heading" href="#">Shop by Age</a>
                     </button>
                     <button>
                       <a href="#">0-2 Years</a>
@@ -616,7 +532,7 @@ const navigateto=useNavigate()
                       <a href="#">InnerWear & Nightwear</a>
                     </button>
                     <button>
-                      <a href="#">shop By Age</a>
+                      <a className="dropdown-content-heading" href="#">shop By Age</a>
                     </button>
                     <button>
                       <a href="#">0-2 Years</a>
@@ -652,10 +568,10 @@ const navigateto=useNavigate()
                       <a href="#">Formal Shoes</a>
                     </button>
                     <button>
-                      <a href="#">Accessories</a>
+                      <a className="dropdown-content-heading" href="#">Accessories</a>
                     </button>
                     <button>
-                      <a href="#">Bed & Bath</a>
+                      <a className="dropdown-content-heading" href="#">Bed & Bath</a>
                     </button>
                   
                   </div>
@@ -743,7 +659,7 @@ const navigateto=useNavigate()
                       <a href="#">Shower Curtains</a>
                     </button>
                     <button>
-                      <a href="#">Furniture</a>
+                      <a className="dropdown-content-heading" href="#">Furniture</a>
                     </button>
                     
                   </div>
@@ -789,22 +705,37 @@ const navigateto=useNavigate()
               <li class="nav-item">
                 <button>
 
-                <a href="#">OFFERS</a>
+                <a className="color" href="#">OFFERS</a>
                 </button>
               </li>
             
             
             </li>
             <li class="nav-item">
-                <button onClick={navigateto("/cart")}>
-
-                <a href="#">CART</a>
+                <button className="scrap" >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.KrxFzeVDGy0_He8JTFntoQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+                <a className="scrap" href="#">SCRAPBOOK</a>
                 </button>
               </li>
               <li class="nav-item">
-                <button onClick={navigateto("/login")} >
+                <button>
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.qLQCPaWxeYifioMDyQUoJwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
 
-                <a href="#">PROFILE</a>
+                <a className="scrap" href="#">SEARCH</a>
+                </button>
+              </li>
+            <li class="nav-item">
+                <button  >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.hy2ZHgfL8xlOQUkJfe-hVQHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
+
+                <a className="scrap" href="#">CART</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.8pQGc1uvCGFkeniunEv1rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
+
+                <a className="scrap" href="#">PROFILE</a>
                 </button>
               </li>
             
