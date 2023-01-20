@@ -27,6 +27,13 @@
 	font-size: 30px;
 	font-weight: 500;
 }
+.textcontent{
+	text-align: left;
+}
+.homelogos{
+	display: flex;
+	justify-content: space-between;
+}
 .typewriter {
 	display: flex;
 	color: black;

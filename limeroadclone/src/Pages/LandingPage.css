@@ -32,7 +32,11 @@
 	color: black;
 	width: 30%;
 	margin: auto;
-
+	display: flex;
+	font-size: 30px;
+	font-weight: 500;
+}
+.typewriter p{
 	font-size: 30px;
 	font-weight: 500;
 }

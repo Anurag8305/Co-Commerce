@@ -23,10 +23,10 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="btn">
-        <Link to={"/homepage"}>
+        <Link to={"/homepagemen"}>
           <button>SHOP MEN</button>
         </Link>
-        <Link to={"/homepage"}>
+        <Link to={"/homepagewomen"}>
           <button>SHOP WOMEN</button>
         </Link>
       </div>

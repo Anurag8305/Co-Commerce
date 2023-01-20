@@ -22,7 +22,6 @@ import {
   } from "@chakra-ui/react";
   import React from "react";
   import { useState } from "react";
-  import "./SingleProduct.css";
   import { IoLogoWhatsapp } from "react-icons/io";
   import { BsShareFill } from "react-icons/bs";
   import { BsHeartFill } from "react-icons/bs";
