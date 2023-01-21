@@ -753,9 +753,141 @@ const Navbar = () => {
             
           </ul>
         </div>
+       
+        
       </div>
+      <div className="men">
+      <button className="button">
+      <Link to={"/women"}>
+      <h1>WOMEN</h1>
+      </Link>
+      <Link to={"/men"}>
+        <h1>MEN</h1>
+        </Link>
+      </button>
+        
+      </div>
+      <div className="nav_photo">
+      <div>
+      <Link>
+        <img
+        src="https://img1.junaroad.com//assets/images/mobileNotif/img-1628498908811.jpg"
+        alt="logo"
+        
+        />
+        <p className="p">MY FEED</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/winter.png"
+        alt="logo"
+        />
+         <p className="p">WINTER</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/tshirts.png"
+        alt="logo"
+        />
+         <p className="p"> T-SHIRT</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/shirts.png"
+        alt="logo"
+        />
+         <p className="p">SHIRTS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/jeans.png"
+        alt="logo"
+        />
+         <p className="p">JEANS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/trousers.png"
+        alt="logo"
+        />
+         <p className="p">TROUSERS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/ethnicsets.png"
+        alt="logo"
+        />
+         <p className="p">ETHINIC SETS</p>
+     </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/footwear.png"
+        alt="logo"
+        />
+         <p className="p">FOOTWEAR</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/kids.png"
+        alt="logo"
+        />
+         <p className="p">KIDS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/women/home.png"
+        alt="logo"
+        />
+         <p className="p">HOME</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/accessory.png"
+          alt="logo"
+        />
+         <p className="p">ACCESSORY</p>
+        </Link>
+      </div>
+      </div>
+      <div className="img2">
+        <img
+        className="img4"
+          src="https://img0.junaroad.com/assets/images/blue_annoucement.png"
+        />
+        <h1 className="h1">	
+Get FLAT 10% OFF on your purchase on payment via Paytm/ GPay/ PhonePe/ Net Banking/ Any Credit or Debit Card</h1>
+      </div>
+      <img
+      className="img1"
+        src="https://img1.junaroad.com//assets/images/mobileNotif/img-1674044135107.jpg?crsl_pos=0"
+      />
+     
     </>
   );
 };
+
 
 export default Navbar;
