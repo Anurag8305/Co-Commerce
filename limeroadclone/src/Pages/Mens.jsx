@@ -28,6 +28,7 @@ import {
   CardBody,
   Heading,
   Image,
+  Spinner,
 } from "@chakra-ui/react";
 import "./Mens.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -38,7 +39,12 @@ import { getData } from "../Redux/Mens/action";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 const Mens = () => {
   const dispatch = useDispatch();
-  const Mens = useSelector((store) => store.MensReducer.Mens);
+  const {isLoading,Mens} = useSelector((store) =>{
+    return {
+      Mens: store.MensReducer.Mens,
+      isLoading: store.MensReducer.isLoading
+    }
+  });
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
   const [isLargerThan768] = useMediaQuery("(min-width: 485px)");
@@ -51,7 +57,7 @@ const Mens = () => {
   const [Category, setCategory] = useState("1");
   const [noofElements, setnoofElements] = useState(6);
   const loaction = useLocation();
-  console.log(loaction);
+ 
   const [searchParams, setSearchParams] = useSearchParams();
   const initialSort = searchParams.getAll("sort");
   const [sort, setSort] = useState(initialSort[0] || "");
@@ -76,15 +82,21 @@ const Mens = () => {
           _order: sortBy,
         },
       };
-      console.log("random");
+    
       dispatch(getData(getMensParams));
-      console.log("random2");
+  
     }
   }, [loaction.search, sort, setSearchParams]);
 
   return (
     <div>
+       {isLoading ? <Spinner  thickness='4px'
+  speed='0.65s'
+  emptyColor='gray.200'
+  color='red.500' 
+  size='xl'  />: null}
       <Box p={1}>
+       
         <Flex>
           {!isLargerThan768 ? (
             <div>
@@ -489,8 +501,8 @@ const Mens = () => {
               </Box>
             </Box>
           )}
-
-          <Box ml={[0, 300, 300, 350]} width={["60%", "60%", "70%", "77%"]}>
+   
+        <Box ml={[0, 300, 300, 350]} width={["60%", "60%", "70%", "77%"]}>
             <Grid
               ml="50px"
               mt="10"
@@ -505,25 +517,26 @@ const Mens = () => {
               {slice.length > 0 &&
                 slice.map((item) => (
                   <GridItem>
-                      <Link to={`/singleproduct/${item.id}`}>
-                    <Card maxW="sm">
-                      <CardBody>
-                        <Image
-                          src={item.img1}
-                          alt="Green double couch with wooden legs"
-                          borderRadius="lg"
-                        />
-                        <Stack mt="6" spacing="3">
-                          <Heading size="md">{item.title}</Heading>
-                          <Text color="gray">Rs.{item.price}</Text>
-                        </Stack>
-                      </CardBody>
-                    </Card>
+                    <Link to={`/singleproduct/${item.id}`}>
+                      <Card maxW="sm">
+                        <CardBody>
+                          <Image
+                            src={item.img1}
+                            alt="Green double couch with wooden legs"
+                            borderRadius="lg"
+                          />
+                          <Stack mt="6" spacing="3">
+                            <Heading size="md">{item.title}</Heading>
+                            <Text color="gray">Rs.{item.price}</Text>
+                          </Stack>
+                        </CardBody>
+                      </Card>
                     </Link>
                   </GridItem>
                 ))}
             </Grid>
-            <Box align="center" p={10}>
+            {isLoading ? null :   
+               <Box  align="center" p={10}>
               <Button
                 onClick={() => loadMore()}
                 _hover={{ bg: "RGBA(0, 0, 0, 0.24)" }}
@@ -535,8 +548,10 @@ const Mens = () => {
               >
                 Load more
               </Button>
-            </Box>
+            </Box> }
+       
           </Box>
+          
         </Flex>
       </Box>
     </div>
