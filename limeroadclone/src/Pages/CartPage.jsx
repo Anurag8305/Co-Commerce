@@ -17,8 +17,6 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { AiOutlineClose } from "react-icons/ai";
-
-import Crousel from "./crousel";
 import Navbar from "../Components/Navbar";
 const CartPage = () => {
   const toast = useToast();
@@ -134,6 +132,13 @@ const CartPage = () => {
         ? Calculate("checkouttotal_coupon_applied")
         : Calculate("checkouttotal")
     );
+    toast({
+      title: "Please Provide your shipping Address ",
+      description: "And Choose Payment Method",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
     navigateTo("/payment");
   };
   return (
