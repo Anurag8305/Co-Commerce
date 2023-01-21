@@ -32,6 +32,7 @@ const HomePage = () => {
 			<div className="product_container">
 				{data?.map((el) => {
 					return (
+						<div className="cards">
 						<LandingPageCard
 							key={el.id}
 							image={el.image}
@@ -39,6 +40,7 @@ const HomePage = () => {
 							followers={el.followers}
 							likes={el.likes}
 						/>
+						</div>
 					);
 				})}
 			</div>
