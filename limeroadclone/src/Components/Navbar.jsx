@@ -7,7 +7,7 @@ import { BsPerson, BsBag } from "react-icons/bs";
 import { Image,Heading,HStack,Text,Spacer } from "@chakra-ui/react";
 
 import { Link,useNavigate } from "react-router-dom";
-
+import images from "../Images/logo.png"
 const Navbar = () => {
   const navigateto=useNavigate()
 
@@ -21,7 +21,7 @@ const Navbar = () => {
             <li class="nav-item">
               <button >
 
-              <Link className="lime" to="/">LimeRoad</Link>
+              <Link className="lime" to="/"><img className="img5" src={images} alt="logo" /></Link>
               </button>
             </li>
              {/* ============== 2nd Nav Item ==============  */}
@@ -749,10 +749,21 @@ const Navbar = () => {
                 <div className="scrap" href="#">PROFILE</div>
                 </button>
                 </Link>
+              
+
+               
               </li>
+             
+              
+            
             
           </ul>
+         
+       
+         
         </div>
+       
+      
        
         
       </div>
@@ -876,13 +887,16 @@ const Navbar = () => {
         <img
         className="img4"
           src="https://img0.junaroad.com/assets/images/blue_annoucement.png"
+          alt="single"
         />
         <h1 className="h1">	
 Get FLAT 10% OFF on your purchase on payment via Paytm/ GPay/ PhonePe/ Net Banking/ Any Credit or Debit Card</h1>
       </div>
+
       <img
       className="img1"
         src="https://img1.junaroad.com//assets/images/mobileNotif/img-1674044135107.jpg?crsl_pos=0"
+       alt="single"
       />
      
     </>
