@@ -1,0 +1,7 @@
+.textcontent{
+	text-align: left;
+}
+.homologos{
+	display: flex;
+	justify-content: space-between;
+}

@@ -4,38 +4,53 @@ import { BiSearchAlt2, BiStoreAlt } from "react-icons/bi";
 import { IoMdArrowDropdown, IoMdClose } from "react-icons/io";
 import { HiGift } from "react-icons/hi";
 import { BsPerson, BsBag } from "react-icons/bs";
-import { Image,Heading,HStack,Text,Spacer } from "@chakra-ui/react";
+import { Image, Heading, HStack, Text, Spacer } from "@chakra-ui/react";
+
 
 import { Link,useNavigate } from "react-router-dom";
 import images from "../Images/logo.png"
+
+import { Link, useNavigate } from "react-router-dom";
+
+
 const Navbar = () => {
-  const navigateto=useNavigate()
+  const navigateto = useNavigate();
 
   return (
     <>
       <div className="ad-store" id="ad-store">
-        
         <div className="navbar-bottom">
           <ul class="navbar-nav">
-           {/* ============== 1st Nav Item ==============  */}
+            {/* ============== 1st Nav Item ==============  */}
             <li class="nav-item">
+
               <button >
 
               <Link className="lime" to="/"><img className="img5" src={images} alt="logo" /></Link>
+
+              <button>
+                <Link className="lime" to="/">
+                  LimeRoad
+                </Link>
+
               </button>
             </li>
-             {/* ============== 2nd Nav Item ==============  */}
+            {/* ============== 2nd Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
                 <button>
+
                 <Link to='/men'>WOMEN</Link>
+
+                  <Link to="/men">WOMEN</Link>
+
                 </button>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
-                  <div >
+                  <div>
                     <a href="#" className="dropdown-content-heading">
-                     ETHNIC WEAR
+                      ETHNIC WEAR
                     </a>
                     <button>
                       <a href="#">Kurta Kurtis</a>
@@ -77,12 +92,14 @@ const Navbar = () => {
                       <a href="#">Cloaks & Abaya</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Bags & wallets</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Bags & wallets
+                      </a>
                     </button>
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Western WEAR
+                      Western WEAR
                     </a>
                     <button>
                       <a href="#">Tops</a>
@@ -141,7 +158,9 @@ const Navbar = () => {
                       <a href="#">Shoes</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Lingerie & Sleepwear</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Lingerie & Sleepwear
+                      </a>
                     </button>
                     <button>
                       <a href="#">Bra</a>
@@ -162,13 +181,15 @@ const Navbar = () => {
                       <a href="#">Camisoles & Thermals</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Belts & Watches</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Belts & Watches
+                      </a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Sunglasses & Mats</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Sunglasses & Mats
+                      </a>
                     </button>
-                    
-
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
@@ -181,7 +202,9 @@ const Navbar = () => {
                       <a href="#">Imiation Jwellery</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Earings</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Earings
+                      </a>
                     </button>
                     <button>
                       <a href="#">Necklace & Pendants</a>
@@ -212,7 +235,9 @@ const Navbar = () => {
                       <a href="#">Boots</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading"  href="#">Beauty & personal Care</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Beauty & personal Care
+                      </a>
                     </button>
                   </div>
                   <div>
@@ -254,13 +279,19 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-             {/* ============== 3rd Nav Item ==============  */}
+            {/* ============== 3rd Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
               <Link to={"/men"}>
                 <button>
 
+
                 <div className="padding" href="#">MEN</div>
+
+                  <Link to="/men">
+                    <div className="padding">MEN</div>
+                  </Link>
+
                 </button>
                 </Link>
               </li>
@@ -268,7 +299,7 @@ const Navbar = () => {
                 <div className="dropdown-content">
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Top Wear
+                      Top Wear
                     </a>
                     <button>
                       <a href="#">T-shirts</a>
@@ -292,7 +323,9 @@ const Navbar = () => {
                       <a href="#">Sweaters & Sweatshirts</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Bottom Wear</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Bottom Wear
+                      </a>
                     </button>
                     <button>
                       <a href="#">Jeans</a>
@@ -312,7 +345,7 @@ const Navbar = () => {
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Ethnic Wear
+                      Ethnic Wear
                     </a>
                     <button>
                       <a href="#">Kurtas</a>
@@ -327,7 +360,9 @@ const Navbar = () => {
                       <a href="#">Ethnic Bottom Wear</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Sports Wear</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Sports Wear
+                      </a>
                     </button>
                     <button>
                       <a href="#">T-shirts</a>
@@ -342,13 +377,14 @@ const Navbar = () => {
                       <a href="#">Track suits</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Fragnces</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Fragnces
+                      </a>
                     </button>
-            
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Footwear
+                      Footwear
                     </a>
                     <button>
                       <a href="#">Casual Shoes</a>
@@ -369,19 +405,24 @@ const Navbar = () => {
                       <a href="#">Socks</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Belts,Bags & Wallets</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Belts,Bags & Wallets
+                      </a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Watches</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Watches
+                      </a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Sunglasses & Frames</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Sunglasses & Frames
+                      </a>
                     </button>
-                  
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Accesorries
+                      Accesorries
                     </a>
                     <button>
                       <a href="#">Caps And Hats</a>
@@ -402,7 +443,9 @@ const Navbar = () => {
                       <a href="#">Headphones & Speakers</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Innerwear </a>
+                      <a className="dropdown-content-heading" href="#">
+                        Innerwear{" "}
+                      </a>
                     </button>
                     <button>
                       <a href="#">Briefs </a>
@@ -414,12 +457,14 @@ const Navbar = () => {
                       <a href="#">Vests</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Personal Grooming</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Personal Grooming
+                      </a>
                     </button>
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Brands
+                      Brands
                     </a>
                     <button>
                       <a href="#">Arrow</a>
@@ -445,29 +490,33 @@ const Navbar = () => {
                     <button>
                       <a href="#">Alcis</a>
                     </button>
-                    
                   </div>
-
                 </div>
               </div>
             </li>
-             {/* ============== 4th Nav Item ==============  */}
-             <li class="nav-item has-dropdown">
+            {/* ============== 4th Nav Item ==============  */}
+            <li class="nav-item has-dropdown">
               <li class="nav-item">
               <Link to={"/kids"}>
                 <button>
+
                 
 
                 <div className="kid" href="#">KIDS</div>
                
+
+                  <a className="kid" href="#">
+                    KIDS
+                  </a>
+
                 </button>
                 </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
-                <div>
+                  <div>
                     <a href="#" className="dropdown-content-heading">
-                     Boys
+                      Boys
                     </a>
                     <button>
                       <a href="#">T-shirts</a>
@@ -494,7 +543,9 @@ const Navbar = () => {
                       <a href="#">twin Sets & Dungrees</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Shop by Age</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Shop by Age
+                      </a>
                     </button>
                     <button>
                       <a href="#">0-2 Years</a>
@@ -511,7 +562,7 @@ const Navbar = () => {
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Girls
+                      Girls
                     </a>
                     <button>
                       <a href="#">Dresses & Frocks</a>
@@ -538,7 +589,9 @@ const Navbar = () => {
                       <a href="#">InnerWear & Nightwear</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">shop By Age</a>
+                      <a className="dropdown-content-heading" href="#">
+                        shop By Age
+                      </a>
                     </button>
                     <button>
                       <a href="#">0-2 Years</a>
@@ -552,11 +605,10 @@ const Navbar = () => {
                     <button>
                       <a href="#">12-16 Years</a>
                     </button>
-            
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Footwear
+                      Footwear
                     </a>
                     <button>
                       <a href="#">Sandals & Floaters</a>
@@ -574,16 +626,19 @@ const Navbar = () => {
                       <a href="#">Formal Shoes</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Accessories</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Accessories
+                      </a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Bed & Bath</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Bed & Bath
+                      </a>
                     </button>
-                  
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Brands
+                      Brands
                     </a>
                     <button>
                       <a href="#">Giny & Jony</a>
@@ -612,7 +667,6 @@ const Navbar = () => {
                     <button>
                       <a href="#">Beebay</a>
                     </button>
-                    
                   </div>
                 </div>
               </div>
@@ -623,15 +677,19 @@ const Navbar = () => {
               <Link to={"/homepage"}>
                 <button>
 
+
                 <div href="#">HOME</div>
+
+                  <a href="#">HOME</a>
+
                 </button>
                 </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
-                <div>
+                  <div>
                     <a href="#" className="dropdown-content-heading">
-                     Bed Linen & Furnishing
+                      Bed Linen & Furnishing
                     </a>
                     <button>
                       <a href="#">Bed Sheet Sets</a>
@@ -651,11 +709,10 @@ const Navbar = () => {
                     <button>
                       <a href="#">Curtains</a>
                     </button>
-                    
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Bath
+                      Bath
                     </a>
                     <button>
                       <a href="#">Towels</a>
@@ -667,44 +724,47 @@ const Navbar = () => {
                       <a href="#">Shower Curtains</a>
                     </button>
                     <button>
-                      <a className="dropdown-content-heading" href="#">Furniture</a>
+                      <a className="dropdown-content-heading" href="#">
+                        Furniture
+                      </a>
                     </button>
-                    
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Decor
+                      Decor
                     </a>
                     <button>
-                      <a href="#" className="dropdown-content-heading">Household Accessories</a>
+                      <a href="#" className="dropdown-content-heading">
+                        Household Accessories
+                      </a>
                     </button>
                     <button>
-                      <a href="#" className="dropdown-content-heading"> Kitchen</a>
+                      <a href="#" className="dropdown-content-heading">
+                        {" "}
+                        Kitchen
+                      </a>
                     </button>
-                    
                   </div>
                   <div>
                     <a href="#" className="dropdown-content-heading">
-                     Brands
+                      Brands
                     </a>
                     <button>
-                      <a href="#" >Belia Casa</a>
+                      <a href="#">Belia Casa</a>
                     </button>
                     <button>
-                      <a href="#" > Cortina</a>
+                      <a href="#"> Cortina</a>
                     </button>
                     <button>
-                      <a href="#" > Bianca</a>
+                      <a href="#"> Bianca</a>
                     </button>
                     <button>
-                      <a href="#" > Jeby</a>
+                      <a href="#"> Jeby</a>
                     </button>
                     <button>
-                      <a href="#" > Saral Home</a>
+                      <a href="#"> Saral Home</a>
                     </button>
-                    
                   </div>
-              
                 </div>
               </div>
             </li>
@@ -712,14 +772,14 @@ const Navbar = () => {
             <li class="nav-item has-dropdown">
               <li class="nav-item">
                 <button>
-
-                <a className="color" href="#">OFFERS</a>
+                  <a className="color" href="#">
+                    OFFERS
+                  </a>
                 </button>
               </li>
-            
-            
             </li>
             <li class="nav-item">
+
                 <button className="scrap" >
                 <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.KrxFzeVDGy0_He8JTFntoQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
                 <div className="scrap" href="#">SCRAPBOOK</div>
@@ -757,6 +817,54 @@ const Navbar = () => {
               
             
             
+
+              <button className="scrap">
+                <img
+                  style={{ width: "14px" }}
+                  src="https://www.bing.com/th?id=OIP.KrxFzeVDGy0_He8JTFntoQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                />
+                <a className="scrap" href="#">
+                  SCRAPBOOK
+                </a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button>
+                <img
+                  style={{ width: "14px" }}
+                  src="https://www.bing.com/th?id=OIP.qLQCPaWxeYifioMDyQUoJwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                />
+
+                <a className="scrap" href="#">
+                  SEARCH
+                </a>
+              </button>
+            </li>
+            <li class="nav-item">
+              <Link to="/cart">
+                <button>
+                  <img
+                    style={{ width: "14px" }}
+                    src="https://www.bing.com/th?id=OIP.hy2ZHgfL8xlOQUkJfe-hVQHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                    alt="logo"
+                  />
+                  CART
+                </button>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/login">
+                <button>
+                  <img
+                    style={{ width: "14px" }}
+                    src="https://www.bing.com/th?id=OIP.8pQGc1uvCGFkeniunEv1rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                    alt="logo"
+                  />
+                  PROFILE
+                </button>
+              </Link>
+            </li>
+
           </ul>
          
        
@@ -904,4 +1012,6 @@ Get FLAT 10% OFF on your purchase on payment via Paytm/ GPay/ PhonePe/ Net Banki
 };
 
 
+
 export default Navbar;
+

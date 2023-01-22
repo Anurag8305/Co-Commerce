@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	background-image: url(../Images/background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	opacity: 0.9;
+	text-align: center;
+	justify-content: center;
+}
+.container > img {
+	width: 30%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.text {
+	color: black;
+	width: 20%;
+	margin: auto;
+}
+.text h1 {
+	font-size: 30px;
+	font-weight: 500;
+}
+.typewriter {
+	display: flex;
+	color: black;
+	width: 30%;
+	margin: auto;
+
+	font-size: 30px;
+	font-weight: 500;
+}
+.btn {
+	width: 50%;
+	margin: auto;
+	margin-top: 50px;
+	justify-content: space-between;
+}
+.btn button {
+	background-color: rgb(29, 199, 29);
+	padding: 10px 20px 10px 20px;
+	width: 30%;
+	color: white;
+	margin-right: 20px;
+}
+.container p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: black;
+    font-weight: 300;
+}

@@ -2,7 +2,6 @@ import {
 	Box,
 	Center,
 	useColorModeValue,
-	Heading,
 	Text,
 	Stack,
 	Image,
@@ -10,7 +9,13 @@ import {
 import { BsWhatsapp, BsHeart } from "react-icons/bs";
 import "./LandingPageCard.css";
 
-export default function LandingPageCard() {
+export default function LandingPageCard({
+	designer,
+	followers,
+	id,
+	image,
+	likes,
+}) {
 	return (
 		<Center py={12}>
 			<Box
@@ -54,15 +59,18 @@ export default function LandingPageCard() {
 						height={330}
 						width={282}
 						objectFit={"cover"}
-						src="https://img0.junaroad.com/stories/story_p_63b7f02113cb38082a015356-1673860390.jpeg"
+						src={image}
 					/>
 				</Box>
 				<Stack pt={10} className="textcontent">
 					<Text fontSize={"m"} textTransform={"uppercase"}>
-						By <b>Anujabofficial</b>
+						By <b>{designer}</b>
 					</Text>
 					<Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
-						404 Followers
+						Followers:{followers}
+					</Text>
+					<Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
+						Likes:{likes}
 					</Text>
 					<div className="homologos">
 						<Text fontSize={"xl"}>
