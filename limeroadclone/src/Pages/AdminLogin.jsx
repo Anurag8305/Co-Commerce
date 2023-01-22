@@ -1,257 +1,166 @@
-import React from "react";
-import { useState } from "react";
-import ProjectLogo from "../Images/logo.png";
-import firebase from "../Components/firebase";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { UserAuth } from "./Context/UserAuthContext";
+import React, { useState } from "react";
 import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
+  Flex,
+  Box,
+  FormControl,
+  FormLabel,
+  Input,
+  Checkbox,
+  Stack,
+  Link,
+  Button,
+  Heading,
+  Text,
+  useColorModeValue,
+  useToast,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { SetUserDataAfterLogin } from "../Redux/Auth/auth.action";
+const Login = () => {
+  const toast = useToast();
+  const dispatch = useDispatch();
+  const navigateTo = useNavigate();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-const AdminLogin = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const { signin, googleSignin } = UserAuth();
-  const navigate = useNavigate();
-
-
-  const goToHome = () => {
-    navigate("/");
+  const HandleChange = (evt) => {
+    let { name, value } = evt.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
+  const signUppage = () => {
+    toast({
+      position: "bottom-left",
+      title: "Welcome to SignUp.",
+      description: "Here You can Create Your Account.",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+    navigateTo("/signup");
+  };
+  const Loginn = () => {
     try {
-      await signin(email, password);
-      navigate("/admin");
+      console.log("login called");
+      let users = axios
+        .get("https://unit-5backend.onrender.com/Users")
+        .then((response) => {
+          let login = response.data.find((item) => {
+            return (
+              item.email === formData.email &&
+              item.password === formData.password
+            );
+          });
+          console.log("login in user", login, response.data);
+          if (
+            formData.email === "admin@admin.com" &&
+            formData.password === "123456"
+          ) {
+            navigateTo("/admin");
+          } else if (login) {
+            dispatch(SetUserDataAfterLogin(login));
+            toast({
+              title: "Welcome to Co-Commerce.",
+              description: "We are Happy To serve you.",
+              status: "success",
+              duration: 6000,
+              isClosable: true,
+            });
+            navigateTo("/homepage");
+          } else {
+            console.log("login creds invalid");
+            toast({
+              title: "Credential Invalid.",
+              description: "",
+              status: "error",
+              duration: 4000,
+              isClosable: true,
+            });
+          }
+        });
     } catch (error) {
-      setError(error.message);
+      console.log("error", error);
     }
   };
-
-  const handleGoogleSignin = async (e) => {
-    e.preventDefault();
-    try {
-      await googleSignin();
-      navigate("/admin");
-    } catch (error) {
-      setError(error.message);
-    }
-  };
-
   return (
-    <div
-      style={{
-        fontFamily: "Lato, sansSerif",
-        margin: "10vh 33% auto 25%",
-        // border: "1px solid red",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+    <Flex
+      minH={"100vh"}
+      align={"center"}
+      justify={"center"}
+      bg={useColorModeValue("gray.50", "gray.800")}
     >
-      <span> Sign In / Sign up</span>
-      <div
-        style={{
-          padding: "1%",
-          margin: "2% 0",
-          /* width: 28%; */
-          /* margin: auto; */
-          justifyContent: "center",
-          alignItems: "center",
-          display: "flex",
-        }}
-      >
-        <Link to="/">
-          <img
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            src={ProjectLogo}
-            alt="BFC"
-            width="70px"
-          />
-        </Link>
-      </div>
-
-      <h1
-        style={{
-          display: "flex",
-          fontFamily: "Oswald, sansSerif",
-          fontSize: "1.3rem",
-          padding: "3rem, 3rem",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR E-MAIL!
-      </h1>
-      {error && (
-        <Alert status="error">
-          <AlertIcon />
-          <AlertTitle>{error}</AlertTitle>
-        </Alert>
-      )}
-      <form onSubmit={handleSubmit}>
-        <div id="sign-in-button"></div>
-        <div
-          style={{
-            justifyContent: "left",
-            display: "flex",
-            padding: "2rem 1rem 0.5rem",
-          }}
+      <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
+        <Stack align={"center"}>
+          <Heading fontSize={"4xl"}>Sign In</Heading>
+          <Text fontSize={"lg"} color={"gray.600"}></Text>
+        </Stack>
+        <Box
+          rounded={"lg"}
+          bg={useColorModeValue("white", "gray.700")}
+          boxShadow={"lg"}
+          p={8}
+          bgColor="#f0f1f7 "
         >
-          {/* <label style={{ fontSize: ".9rem" }}>Phone Number*</label> */}
-        </div>
-        <input
-          style={{
-            width: "100%",
-            padding: "0 1rem 0.5rem",
-            justifyContent: "left",
-            display: "flex",
-            outline: "none",
-            fontSize: "1rem",
-            color: "red",
-            borderBottom: "1px solid black",
-            marginBottom: "1rem",
-          }}
-          type="email"
-          name="email"
-          placeholder="Email address"
-          required
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
-        <input
-          style={{
-            width: "100%",
-            padding: "0 1rem 0.5rem",
-            justifyContent: "left",
-            display: "flex",
-            outline: "none",
-            fontSize: "1rem",
-            color: "red",
-            borderBottom: "1px solid black",
-            marginBottom: "1rem",
-          }}
-          type="Password"
-          name="Password"
-          placeholder="Password"
-          required
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        
-
-        <div style={{ fontSize: ".8rem", marginBottom: "2rem" }}>
-          By “logging in to BFC”, you agree to our{" "}
-          <a
-            style={{ fontSize: ".9rem", textDecoration: "underline" }}
-            href="https://online.kfc.co.in/privacyPolicy"
-            target="blank"
-          >
-            Privacy Policy
-          </a>{" "}
-          and{" "}
-          <a
-            style={{
-              fontSize: ".9rem",
-              color: "black",
-              textDecoration: "underline",
-            }}
-            href="https://online.kfc.co.in/terms-and-conditions"
-            target="blank"
-          >
-            {" "}
-            Terms & Conditions.
-          </a>
-        </div>
-        <button
-          style={{
-            width: "50%",
-            backgroundColor: "#4185f4",
-            color: "white",
-            fontSize: ".9rem",
-            padding: "1rem 3rem",
-            borderRadius: "10px",
-            marginBottom: ".9rem",
-          }}
-        >
-          Let's Go
-        </button>
-      </form>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            top: "0",
-            // paddingLeft: "2px",
-            border: "none",
-            height: "1px",
-            background: "#676565",
-            width: "49%",
-            color: "gray",
-            paddingRight: "3px",
-            marginBottom: ".9rem",
-          }}
-        ></div>
-      </div>
-      <button
-        style={{
-          width: "50%",
-          color: "white",
-          fontSize: ".9rem",
-          //   padding: "1rem 3rem",
-          borderRadius: "10px",
-          marginBottom: ".9rem",
-        }}
-        onClick={handleGoogleSignin}
-      >
-        <img
-          style={{ width: "100%", borderRadius: "10px" }}
-          src="https://onymos.com/wp-content/uploads/2020/10/google-signin-button.png"
-          alt="Google"
-        />
-      </button>
-
-      <div>
-        Don't have an account?{" "}
-        <a href="/adminlogout" style={{ textDecoration: "underline" }}>
-          Click me
-        </a>
-      </div>
-      <button
-        style={{
-          backgroundColor: "transparent",
-          color: "black",
-          border: "1px solid black",
-          fontSize: ".9rem",
-          padding: ".9rem 5rem",
-          borderRadius: "50px",
-          marginBottom: "3rem",
-          marginTop: "3rem",
-        }}
-        onClick={goToHome}
-      >
-        Skip, Continue As Guest
-      </button>
-    </div>
+          <Stack spacing={4}>
+            <FormControl id="email">
+              <FormLabel>Email address</FormLabel>
+              <Input
+                type="email"
+                name="email"
+                borderColor={"grey"}
+                value={formData.email}
+                onChange={HandleChange}
+              />
+            </FormControl>
+            <FormControl id="password">
+              <FormLabel>Password</FormLabel>
+              <Input
+                type="password"
+                name="password"
+                borderColor={"grey"}
+                value={formData.password}
+                onChange={HandleChange}
+              />
+            </FormControl>
+            <Stack spacing={10}>
+              <Stack
+                direction={{ base: "column", sm: "row" }}
+                align={"start"}
+                justify={"space-between"}
+              >
+                <Checkbox borderColor={"grey"}>Remember me</Checkbox>
+                <Link color={"blue.400"}>Forgot password?</Link>
+              </Stack>
+              <Button
+                bg={"blue.400"}
+                color={"white"}
+                _hover={{
+                  bg: "blue.500",
+                }}
+                onClick={Loginn}
+              >
+                Sign in
+              </Button>
+            </Stack>
+            <Stack pt={6}>
+              <Text align={"center"}>
+                Don't have a account?{" "}
+                <Link color={"blue.400"} onClick={signUppage}>
+                  SignUp
+                </Link>
+              </Text>
+            </Stack>
+          </Stack>
+        </Box>
+      </Stack>
+    </Flex>
   );
 };
 
-export default AdminLogin;
+export default Login;

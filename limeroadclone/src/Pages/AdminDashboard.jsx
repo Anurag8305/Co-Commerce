@@ -11,50 +11,68 @@ import {
   } from "@chakra-ui/react";
   import React from "react";
   import { useDispatch, useSelector } from "react-redux";
- // import DisplayProducts from "../Components/DisplayProducts";
- // import Sorting from "../Components/Sorting";
-  import "../CSS/admin.css";
-  import { getData } from "../Redux/Sorting/actiontype";
+ 
+  //import Sorting from "../Components/Sorting";
+ // import "../CSS/admin.css";
+  import { getData } from "../Redux/Sorting/action";
   import { useState, useEffect } from "react";
- // import ProductManagement from "../Components/ProductManagement";
+
   import { UserAuth } from "./Context/UserAuthContext";
   import { useNavigate, useSearchParams } from "react-router-dom";
   import { useLocation } from "react-router-dom";
   import { store } from "../Redux/store";
+import DisplayProducts from "../Components/DisplayProducts";
+import ProductManagement from "../Components/ProductManagement";
   
   function AdminDashboard() {
-    const { user, logOut } = UserAuth();
+   const dispatch=useDispatch()
     const location = useLocation();
     const [flag, setflag] = useState(false);
     const navigate = useNavigate();
-    const [searchParams,setSearchParams]=useSearchParams();
-   // console.log(store.getState());
-    // console.log(user);
-   // const data = useSelector((state) => state.Sortingreducer.data);
-    // console.log(data)
-    const [Data, setData] = useState([]);
-    // console.log(Data)
+    const [Data,setData]=useState(false)
+    const data=useSelector((store)=>store.Sortingreducer.data)
+
+    const handleSort = (e) => {
+      e.preventDefault();
+      console.log(e.target.value);
+      if (e.target.value == "High") {
+        data.sort((a, b) => {
+         
+          return b.price - a.price;
+        });
+      } else {
+        data.sort((a, b) => {
+         
+          return a.price - b.price;
+        });
+      }
+      // console.log(Data)
+      setflag(!flag);
+      // console.log(data)
+      setData(data);
+    };
+  
+   
+
   
     const handleLogout = async () => {
       try {
-        await logOut;
+        await 
         navigate("/");
       } catch (error) {
         console.log(error.message);
       }
     };
-  
-
-   
-  
-   
+    
+    const [count,setcount]=useState(0)
+    
   
     return (
       //display sales status on daily, weekly and monthly bases
       <>
-        <div id="admin_display" style={{position:"fixed", width:"100%",backgroundColor:"silver"}}>
+        <div  style={{display:"flex",paddingTop:"10px", justifyContent:"space-evenly",  width:"100%",backgroundColor:"silver",margin: ".0rem",position:"fixed"}}>
           <div>
-          <h3 style={{color:"green"}}>{user && "WELCOME TO ADMIN PAGE"} </h3>
+          <h3 style={{color:"green"}}>{ "WELCOME TO ADMIN PAGE"} </h3>
           </div>
           <div>
             <h3>Sold 15 products this week</h3>
@@ -64,7 +82,7 @@ import {
           </div>
           <div>
             
-            <h3>Sold 2 products today</h3>
+            <h3>Total Product:  {data.length}</h3>
           </div>
           <div>
             <Button
@@ -77,8 +95,31 @@ import {
             </Button>
           </div>
         </div>
-        {/* <Grid templateColumns="repeat(2, 1fr)"> */}
+        
       
+      <HStack id="filteri_ng">
+        <VStack position="fixed" top="50px">
+          {/* <Sorting /> */}
+          <Select
+            w={"200px"}
+            color="black"
+            bg={"grey"}
+             onChange={(e) => handleSort(e)}
+            placeholder="Sort By Price"
+          >
+            <option value="High">High</option> 
+            <option value="Low">Low</option>
+          </Select>
+
+          <ProductManagement />
+        </VStack>
+
+        {/* <GridItem marginTop="70px" h={"auto"} ml="25%" > */}
+
+        <DisplayProducts data={data == [] ? Data : data} />
+        {/* </GridItem> */}
+        
+      </HStack>
       </>
     );
   }

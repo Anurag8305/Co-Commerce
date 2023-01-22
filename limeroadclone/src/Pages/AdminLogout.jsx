@@ -6,7 +6,7 @@ import {
   AlertTitle,
   AlertDescription,
 } from "@chakra-ui/react";
-import ProjectLogo from "../Assets/ProjectLogo.png";
+import ProjectLogo from "../Images/logo.png";
 import firebase from "../Components/firebase";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";

@@ -505,7 +505,9 @@ const Mens = () => {
               {slice.length > 0 &&
                 slice.map((item) => (
                   <GridItem>
+                    {   item.available ?(
                       <Link to={`/singleproduct/${item.id}`}>
+                     
                     <Card maxW="sm">
                       <CardBody>
                         <Image
@@ -520,6 +522,30 @@ const Mens = () => {
                       </CardBody>
                     </Card>
                     </Link>
+                     ):
+                     (
+                     
+                      
+                      <Card maxW="sm">
+                      <CardBody>
+                        <Image
+                          src={item.img1}
+                          alt="Green double couch with wooden legs"
+                          borderRadius="lg"
+                          
+                        />
+                        <Stack mt="6" spacing="3">
+                          <Heading size="md" color="red">Not Available</Heading>
+                          <Text color="gray"></Text>
+                        </Stack>
+                      </CardBody>
+                    </Card>
+                    
+                     )
+                    }                     
+
+
+                    
                   </GridItem>
                 ))}
             </Grid>
