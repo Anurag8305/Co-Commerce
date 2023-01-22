@@ -2,20 +2,17 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import LandingPageCard from "../Components/LandingPageCard";
-
-import "./HomePage.css";
-import axios from "axios";
 import Navbar from "../Components/Navbar";
 import "./HomePage.css";
 import axios from "axios";
 
-const HomePage = () => {
+const HomePageWomen = () => {
 	const [data, setData] = useState([]);
 	const [limit, setLimit] = useState(9);
 
 	const getData = () => {
 		axios
-			.get(`https://unit-5backend.onrender.com/LandingMen?_limit=${limit}`)
+			.get(`https://unit-5backend.onrender.com/LandingWomen?_limit=${limit}`)
 			.then((res) => {
 				setData(res.data);
 				console.log(res.data);
@@ -53,4 +50,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default HomePageWomen;

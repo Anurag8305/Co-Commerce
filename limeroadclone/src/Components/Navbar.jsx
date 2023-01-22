@@ -6,7 +6,12 @@ import { HiGift } from "react-icons/hi";
 import { BsPerson, BsBag } from "react-icons/bs";
 import { Image, Heading, HStack, Text, Spacer } from "@chakra-ui/react";
 
+
+import { Link,useNavigate } from "react-router-dom";
+import images from "../Images/logo.png"
+
 import { Link, useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const navigateto = useNavigate();
@@ -18,17 +23,27 @@ const Navbar = () => {
           <ul class="navbar-nav">
             {/* ============== 1st Nav Item ==============  */}
             <li class="nav-item">
+
+              <button >
+
+              <Link className="lime" to="/"><img className="img5" src={images} alt="logo" /></Link>
+
               <button>
                 <Link className="lime" to="/">
                   Co-commerce 
                 </Link>
+
               </button>
             </li>
             {/* ============== 2nd Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
                 <button>
+
+                <Link to='/men'>WOMEN</Link>
+
                   <Link to="/men">WOMEN</Link>
+
                 </button>
               </li>
               <div className="dropdown">
@@ -267,11 +282,18 @@ const Navbar = () => {
             {/* ============== 3rd Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/men"}>
                 <button>
+
+
+                <div className="padding" href="#">MEN</div>
+
                   <Link to="/men">
                     <div className="padding">MEN</div>
                   </Link>
+
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -475,11 +497,20 @@ const Navbar = () => {
             {/* ============== 4th Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/kids"}>
                 <button>
+
+                
+
+                <div className="kid" href="#">KIDS</div>
+               
+
                   <a className="kid" href="#">
                     KIDS
                   </a>
+
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -643,9 +674,16 @@ const Navbar = () => {
             {/* ============== 5th Nav Item ==============  */}
             <li class="nav-item has-dropdown">
               <li class="nav-item">
+              <Link to={"/homepage"}>
                 <button>
+
+
+                <div href="#">HOME</div>
+
                   <a href="#">HOME</a>
+
                 </button>
+                </Link>
               </li>
               <div className="dropdown">
                 <div className="dropdown-content">
@@ -741,6 +779,45 @@ const Navbar = () => {
               </li>
             </li>
             <li class="nav-item">
+
+                <button className="scrap" >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.KrxFzeVDGy0_He8JTFntoQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+                <div className="scrap" href="#">SCRAPBOOK</div>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button>
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.qLQCPaWxeYifioMDyQUoJwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+
+                <div className="scrap" href="#">SEARCH</div>
+                </button>
+              </li>
+            <li class="nav-item">
+            <Link to={"/cart"}>
+                <button  >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.hy2ZHgfL8xlOQUkJfe-hVQHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
+
+                <div className="scrap" href="#">CART</div>
+                </button>
+                </Link>
+              </li>
+              <li class="nav-item">
+              <Link to={"/login"}>
+                <button >
+                <img style={{width:"14px"}} src="https://www.bing.com/th?id=OIP.8pQGc1uvCGFkeniunEv1rwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="logo"/>
+
+                <div className="scrap" href="#">PROFILE</div>
+                </button>
+                </Link>
+              
+
+               
+              </li>
+             
+              
+            
+            
+
               <button className="scrap">
                 <img
                   style={{ width: "14px" }}
@@ -787,11 +864,154 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
+
           </ul>
+         
+       
+         
         </div>
+       
+      
+       
+        
       </div>
+      <div className="men">
+      <button className="button">
+      <Link to={"/women"}>
+      <h1>WOMEN</h1>
+      </Link>
+      <Link to={"/men"}>
+        <h1>MEN</h1>
+        </Link>
+      </button>
+        
+      </div>
+      <div className="nav_photo">
+      <div>
+      <Link>
+        <img
+        src="https://img1.junaroad.com//assets/images/mobileNotif/img-1628498908811.jpg"
+        alt="logo"
+        
+        />
+        <p className="p">MY FEED</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/winter.png"
+        alt="logo"
+        />
+         <p className="p">WINTER</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/tshirts.png"
+        alt="logo"
+        />
+         <p className="p"> T-SHIRT</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/shirts.png"
+        alt="logo"
+        />
+         <p className="p">SHIRTS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/jeans.png"
+        alt="logo"
+        />
+         <p className="p">JEANS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/trousers.png"
+        alt="logo"
+        />
+         <p className="p">TROUSERS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/ethnicsets.png"
+        alt="logo"
+        />
+         <p className="p">ETHINIC SETS</p>
+     </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/footwear.png"
+        alt="logo"
+        />
+         <p className="p">FOOTWEAR</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/men/kids.png"
+        alt="logo"
+        />
+         <p className="p">KIDS</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        src="https://img0.junaroad.com/images/icons/women/home.png"
+        alt="logo"
+        />
+         <p className="p">HOME</p>
+        </Link>
+      </div>
+      <div>
+      <Link>
+        <img
+        className="img"
+        src="https://img0.junaroad.com/images/icons/men/accessory.png"
+          alt="logo"
+        />
+         <p className="p">ACCESSORY</p>
+        </Link>
+      </div>
+      </div>
+      <div className="img2">
+        <img
+        className="img4"
+          src="https://img0.junaroad.com/assets/images/blue_annoucement.png"
+          alt="single"
+        />
+        <h1 className="h1">	
+Get FLAT 10% OFF on your purchase on payment via Paytm/ GPay/ PhonePe/ Net Banking/ Any Credit or Debit Card</h1>
+      </div>
+
+      <img
+      className="img1"
+        src="https://img1.junaroad.com//assets/images/mobileNotif/img-1674044135107.jpg?crsl_pos=0"
+       alt="single"
+      />
+     
     </>
   );
 };
 
+
+
 export default Navbar;
+
