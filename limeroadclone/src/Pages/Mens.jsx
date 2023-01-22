@@ -37,6 +37,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../Redux/Mens/action";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 const Mens = () => {
   const dispatch = useDispatch();
   const {isLoading,Mens} = useSelector((store) =>{
@@ -90,6 +91,7 @@ const Mens = () => {
 
   return (
     <div>
+      <Navbar/>
        {isLoading ? <Spinner  thickness='4px'
   speed='0.65s'
   emptyColor='gray.200'

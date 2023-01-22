@@ -31,6 +31,7 @@ import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getData } from "../Redux/Mens/action";
+import Navbar from "../Components/Navbar";
 const SingleProduct = () => {
   const toast = useToast();
   const { id } = useParams();
@@ -137,6 +138,7 @@ const SingleProduct = () => {
   };
   return (
     <Box p={["1", "0", "10", "10"]} w="fit-content">
+      <Navbar/>
       <Grid
         templateColumns={[
           "repeat(1, 1fr)",

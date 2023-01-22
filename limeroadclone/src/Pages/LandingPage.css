@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-.container {
+.AGcontainer {
 	background-image: url(../Images/background.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -13,7 +13,7 @@
 	text-align: center;
 	justify-content: center;
 }
-.container > img {
+.AGcontainer > img {
 	width: 30%;
 	margin: auto;
 	margin-bottom: 30px;
@@ -49,7 +49,7 @@
 	color: white;
 	margin-right: 20px;
 }
-.container p {
+.AGcontainer p {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: black;

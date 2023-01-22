@@ -2,6 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import LandingPageCard from "../Components/LandingPageCard";
+
+import "./HomePage.css";
+import axios from "axios";
 import Navbar from "../Components/Navbar";
 import "./HomePage.css";
 import axios from "axios";
