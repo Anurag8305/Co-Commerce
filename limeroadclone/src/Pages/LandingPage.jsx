@@ -7,7 +7,7 @@ import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
-    <div className="container">
+    <div className="AGcontainer">
       <img src={logo} alt="" />
       <div className="text">
         <h1>India's most loved</h1>
