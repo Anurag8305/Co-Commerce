@@ -23,7 +23,7 @@ const LandingPage = () => {
 				</div>
 			</div>
 			<div className="btn">
-				<Link to={"/homepagemen"}>
+				<Link to={"/homepage"}>
 					<button>SHOP MEN</button>
 				</Link>
 				<Link to={"/homepagewomen"}>
