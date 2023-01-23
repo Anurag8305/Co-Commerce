@@ -2,7 +2,7 @@
 A group project that is made during the time span of 5 days.
 <b>Team Members-</b> 
 <ul>
-<li><a href="https://www.w3schools.com">Prince</a></li>
+<li><a href="https://www.linkedin.com/in/prince-singh-a35963199/">Prince</a></li>
 <li><a href="https://www.w3schools.com">Pardeep</a></li>
 <li><a href="https://www.linkedin.com/in/anurag-raj-809a82137/">Anurag</a></li>
 <li><a href="https://www.w3schools.com">Pramod</a></li>
