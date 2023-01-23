@@ -1,10 +1,23 @@
 # -subdued-trip-4276
 A group project that is made during the time span of 5 days.
-Team Members- Pradeep, Pramod, Prince, Vinay, Anurag(Team Lead).
+<b>Team Members-</b> 
+<ul>
+<li><a href="https://www.w3schools.com">Prince</a></li>
+<li><a href="https://www.w3schools.com">Pardeep</a></li>
+<li><a href="https://www.linkedin.com/in/anurag-raj-809a82137/">Anurag</a></li>
+<li><a href="https://www.w3schools.com">Pramod</a></li>
+<li><a href="https://www.w3schools.com">Vinay</a></li>
+</ul>
 About Project- Our project Co-Commerce is a fully functional clone website of LimeRoad.com -one of India's most trusted and best website for online shopping.
 LimeRoad is a revolutionary Online Shopping Website and Discovery Platform for Fashionable Men and Women · India's Most Stylish Online Shopping Site, Limeroad.
-Tech-Stack=> React, Chakra UI, CSS, JSON-Server
+<br>
+<hr>
+<b>Tech-Stack=></b> HTML | CSS | JavaScript | React | Redux | ChakraUI | Json-server(Deployed on render)
+<br>
+<hr>
 Deployed Link-https://cocommerse-ten.vercel.app/
+<br>
+<hr>
 Landing Page-![image](https://user-images.githubusercontent.com/106643486/213976631-79e17d8e-9c93-4ee6-9ea5-6604d8515ca8.png)
 HomePage -![image](https://user-images.githubusercontent.com/106643486/213976709-709135fd-51ed-486a-934d-dc2a6fe2e2a9.png)
 MensPage -![image](https://user-images.githubusercontent.com/106643486/213976765-ffca0ef4-8707-469c-98b2-4b00eae7d4ed.png)
