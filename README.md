@@ -1,6 +1,6 @@
 # -subdued-trip-4276
 A group project that is made during the time span of 5 days.
-<b>Team Members-</b> 
+<b> Team Members-</b> 
 <ul>
 <li><a href="https://www.linkedin.com/in/prince-singh-a35963199/">Prince</a></li>
 <li><a href="https://www.w3schools.com">Pardeep</a></li>
