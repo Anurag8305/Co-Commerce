@@ -7,7 +7,7 @@ import "./HomePage.css";
 import axios from "axios";
 import Navbar from "../Components/Navbar";
 import "./HomePage.css";
-import axios from "axios";
+
 
 const HomePage = () => {
 	const [data, setData] = useState([]);
@@ -18,7 +18,7 @@ const HomePage = () => {
 			.get(`https://unit-5backend.onrender.com/LandingMen?_limit=${limit}`)
 			.then((res) => {
 				setData(res.data);
-				console.log(res.data);
+
 			});
 	};
 	const handleLimit=()=>{
@@ -34,10 +34,15 @@ const HomePage = () => {
 	}, [limit]);
 	return (
 		<div>
-			<Navbar />
+			<div id="navbar">
+				<Navbar/>
+			</div>
+		<div>
+	
 			<div className="product_container">
 				{data?.map((el) => {
 					return (
+						<div className="cards">
 						<LandingPageCard
 							designer={el.designer}
 							followers={el.followers}
@@ -45,10 +50,12 @@ const HomePage = () => {
 							image={el.image}
 							likes={el.likes}
 						/>
+						</div>
 					);
 				})}
 			</div>
 			<button className="homebtn" onClick={handleLimit}>Load More</button>
+		</div>
 		</div>
 	);
 };

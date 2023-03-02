@@ -43,7 +43,6 @@ const SignUp = () => {
 
   const navigateTo = useNavigate();
   const GoTo = (path) => {
-    console.log("path", path);
     navigateTo(path);
   };
   const HandleChange = (evt) => {
@@ -56,7 +55,6 @@ const SignUp = () => {
 
   const SignupUser = () => {
     try {
-      console.log("add", formData);
       dispatch(AddUser(formData));
       toast({
         title: "Welcome to SignIn-Page.",

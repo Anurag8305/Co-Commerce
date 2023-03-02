@@ -29,7 +29,7 @@ import { useRef } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import Otp from "./Otp";
+
 
 const Payment = () => {
   const [payableAmount, setPayableAmount] = useState(0);
@@ -104,9 +104,7 @@ const Payment = () => {
                 <Heading fontSize={"4xl"} textAlign={"center"}>
                   Please Fill Address For Shipping
                 </Heading>
-                {/* <Text fontSize={"lg"} color={"gray.600"}>
-                  to enjoy all of our cool features ✌️
-                </Text> */}
+                
               </Stack>
               <Box
                 rounded={"lg"}
@@ -136,19 +134,7 @@ const Payment = () => {
                   <FormControl id="HouseAddress" isRequired>
                     <FormLabel>Flat / House no/ Building Name</FormLabel>
                     <Input type="text" />
-                    {/* <InputGroup>
-                      <Input type={showPassword ? "text" : "password"} />
-                      <InputRightElement h={"full"}>
-                        <Button
-                          variant={"ghost"}
-                          onClick={() =>
-                            setShowPassword((showPassword) => !showPassword)
-                          }
-                        >
-                          {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                        </Button>
-                      </InputRightElement>
-                    </InputGroup> */}
+                    
                   </FormControl>
                   <HStack>
                     <Box>

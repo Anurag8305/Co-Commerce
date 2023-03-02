@@ -1,11 +1,18 @@
+#navbar{
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+}
 .product_container {
 	width: 80%;
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
-	background-color: rgb(230, 222, 222);
+	/* background-color: rgb(230, 222, 222); */
+	padding: 100px 10px 10px 10px;
 }
+
 .homebtn {
 	justify-content: center;
 	border: 1px solid black;
@@ -31,5 +38,4 @@
 		grid-template-columns: repeat(1, 1fr);
 		padding: 20px;
 	}
-}
 }

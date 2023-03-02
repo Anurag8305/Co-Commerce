@@ -15,7 +15,6 @@ const HomePageWomen = () => {
 			.get(`https://unit-5backend.onrender.com/LandingWomen?_limit=${limit}`)
 			.then((res) => {
 				setData(res.data);
-				console.log(res.data);
 			});
 	};
 	const handleLimit=()=>{
@@ -30,6 +29,10 @@ const HomePageWomen = () => {
 		getData();
 	}, [limit]);
 	return (
+        <div>
+            	<div id="navbar">
+				<Navbar/>
+			</div>
 		<div>
 			<Navbar />
 			<div className="product_container">
@@ -47,6 +50,7 @@ const HomePageWomen = () => {
 			</div>
 			<button className="homebtn" onClick={handleLimit}>Load More</button>
 		</div>
+        </div>
 	);
 };
 

@@ -37,6 +37,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getwomenData } from "../Redux/Women/action";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 const Women = () => {
   const dispatch = useDispatch();
   const {isLoading,women} = useSelector((store) =>{
@@ -58,7 +59,7 @@ const Women = () => {
   const [Category, setCategory] = useState("1");
   const [noofElements, setnoofElements] = useState(6);
   const loaction = useLocation();
-console.log(loaction)
+
   const [searchParams, setSearchParams] = useSearchParams();
   const initialSort = searchParams.getAll("sort");
   const [sort, setSort] = useState(initialSort[0] || "");
@@ -92,6 +93,7 @@ console.log(loaction)
 
   return (
     <div>
+        <Navbar/>
           {isLoading ? <Spinner  thickness='4px'
   speed='0.65s'
   emptyColor='gray.200'

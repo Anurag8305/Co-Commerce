@@ -21,7 +21,7 @@ import Navbar from "../Components/Navbar";
 const CartPage = () => {
   const toast = useToast();
   const { userData } = useSelector((store) => {
-    console.log("store", store);
+
     return store.authReducer;
   });
 
@@ -36,7 +36,7 @@ const CartPage = () => {
     percent: 10,
   });
   useEffect(() => {
-    console.log("userdata", userData);
+
     if (!userData || JSON.stringify(userData) === "{}") {
       navigateTo("/login");
       toast({
@@ -85,18 +85,13 @@ const CartPage = () => {
       bag.forEach((item) => {
         result += item.price;
       });
-      // check for coupon
+
       if (coupon.applied) {
         result = (result - (result * coupon.percent) / 100).toFixed(2);
       }
-      //
+
     }
-    // if (type === "discount") {
-    //   bag.forEach((item) => {
-    //     result += item.price;
-    //   });
-    //   result -= 100;
-    // }
+
     if (type === "checkouttotal") {
       bag.forEach((item) => {
         result += item.price;
@@ -108,16 +103,16 @@ const CartPage = () => {
         result += item.price;
       });
       result += 65;
-      // check for coupon
+
       if (coupon.applied) {
         result = (result - (result * coupon.percent) / 100).toFixed(2);
       }
-      //
+
     }
     return result;
   };
   const ApplyCoupon = () => {
-    console.log("applying coupon");
+
     setCoupon((prev) => {
       return {
         ...prev,
@@ -160,14 +155,14 @@ const CartPage = () => {
           display={{ lg: "flex", sm: "grid" }}
           marginTop="50px"
           justifyContent="space-around"
-          // direction={{ base: "column", sm: "row" }}
+
         >
           <Box>
             {bag.map((item) => {
               return (
                 <Card
                   direction={{ base: "column", sm: "row" }}
-                  // overflow="hidden"
+
                   variant="outline"
                   marginBottom="20px"
                   marginLeft={"20px"}
@@ -220,7 +215,7 @@ const CartPage = () => {
           {bag.length !== 0 ? (
             <Box width={{ lg: "35%" }}>
               <Card
-                // direction={{ base: "column", sm: "row" }}
+   
                 overflow="hidden"
                 variant="outline"
                 padding={"10px"}

@@ -5,22 +5,15 @@ import {
   GridItem,
   Text,
   Image,
-  Divider,
   Heading,
   Icon,
   TableContainer,
   Table,
   Thead,
   Tr,
-  Th,
   Tbody,
-  Tfoot,
   Td,
-  Stack,
-  SimpleGrid,
-  Container,
   useToast,
-  Button,
 } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
@@ -38,12 +31,12 @@ const SingleProduct = () => {
   const Mens = useSelector((store) => store.MensReducer.Mens);
   const [currentProduct, setCurrentProduct] = useState({});
   const [cartlength, setCartLength] = useState(0);
-  console.log("single data", currentProduct);
+
   const dispatch = useDispatch();
 
-  console.log(currentProduct.price);
+  
   const AddToCart = (product) => {
-    console.log("dev", product);
+
 
     let cart = localStorage.getItem("cart");
 
@@ -137,8 +130,12 @@ const SingleProduct = () => {
     ml: `-${currentSlide * 100}%`,
   };
   return (
+      <Box>
+          <Box>
+          <Navbar/>
+          </Box>
     <Box p={["1", "0", "10", "10"]} w="fit-content">
-      <Navbar/>
+     
       <Grid
         templateColumns={[
           "repeat(1, 1fr)",
@@ -476,6 +473,7 @@ const SingleProduct = () => {
           </Box>
         </Box>
       </Box>
+    </Box>
     </Box>
   );
 };

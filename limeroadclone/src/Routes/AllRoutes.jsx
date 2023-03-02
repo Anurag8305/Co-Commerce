@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AdminDashboard from "../Pages/AdminDashboard";
 import CartPage from "../Pages/CartPage";
+import Edit from "../Pages/Edit";
 import HomePage from "../Pages/HomePage";
 import HomePageWomen from "../Pages/HomePageWomen";
 import LandingPage from "../Pages/LandingPage";
@@ -25,6 +27,9 @@ const AllRoutes = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/product/:id" element={<Edit />} />
+
       </Routes>
     </div>
   );
