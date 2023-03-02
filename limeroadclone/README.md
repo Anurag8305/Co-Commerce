@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+ -subdued-trip-4276
+A group project that is made during the time span of 5 days.
+<b>Team Members-</b> 
+<ul>
+<li><a href="https://www.linkedin.com/in/prince-singh-a35963199/">Prince</a></li>
+<li><a href="https://www.w3schools.com">Pardeep</a></li>
+<li><a href="https://www.linkedin.com/in/anurag-raj-809a82137/">Anurag</a></li>
+<li><a href="https://www.w3schools.com">Pramod</a></li>
+<li><a href="https://www.w3schools.com">Vinay</a></li>
+</ul>
+About Project- Our project Co-Commerce is a fully functional clone website of LimeRoad.com -one of India's most trusted and best website for online shopping.
+LimeRoad is a revolutionary Online Shopping Website and Discovery Platform for Fashionable Men and Women · India's Most Stylish Online Shopping Site, Limeroad.
+<br>
+<hr>
+<b>Tech-Stack=></b> HTML | CSS | JavaScript | React | Redux | ChakraUI | Json-server(Deployed on render)
+<br>
+<hr>
+Deployed Link-https://cocommerse-ten.vercel.app/
+<br>
+<hr>
+Landing Page-<img src="https://user-images.githubusercontent.com/106643486/213976631-79e17d8e-9c93-4ee6-9ea5-6604d8515ca8.png" alt="Girl in a jacket" width="100%" height="500">
+HomePage-<img src="https://user-images.githubusercontent.com/106643486/213976709-709135fd-51ed-486a-934d-dc2a6fe2e2a9.png" alt="Girl in a jacket" width="100%" height="500">
+MensPage-<img src="https://user-images.githubusercontent.com/106643486/213976765-ffca0ef4-8707-469c-98b2-4b00eae7d4ed.png" alt="Girl in a jacket" width="100%" height="500">
+SingleProduct Page-<img src="https://user-images.githubusercontent.com/106643486/213976816-57db616a-2e4b-400e-bbde-d231882907fd.png" alt="Girl in a jacket" width="100%" height="500">
+CartPage-<img src="https://user-images.githubusercontent.com/106643486/213976890-ff20dbf1-c234-460c-9072-6cf3c83e366f.png" alt="Girl in a jacket" width="100%" height="500">
+Payments Page-<img src="https://user-images.githubusercontent.com/106643486/213976940-d88228a1-0197-4e41-9919-e7f073bb35a7.png" alt="Girl in a jacket" width="100%" height="500">
+Admin Page-<img src="https://user-images.githubusercontent.com/106643486/213976980-a101d460-8874-4d54-8c3a-a52d87e21ec7.png" alt="Girl in a jacket" width="100%" height="500">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
