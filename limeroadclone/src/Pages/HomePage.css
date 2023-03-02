@@ -12,6 +12,11 @@
 	/* background-color: rgb(230, 222, 222); */
 	padding: 100px 10px 10px 10px;
 }
+.loader{
+	width: 50%;
+	margin: auto;
+	margin-left: 420px;
+}
 
 .homebtn {
 	justify-content: center;
@@ -29,6 +34,11 @@
 		grid-template-columns: repeat(2, 1fr);
 		padding: 10px;
 	}
+.loader{
+	width: 50%;
+	margin: auto;
+	margin-left: 220px;
+}
 }
 
 /* MEDIA QUERIES FOR SMALL*/
@@ -37,5 +47,10 @@
 		width: 100%;
 		grid-template-columns: repeat(1, 1fr);
 		padding: 20px;
+	}
+	.loader{
+		width: 50%;
+		margin: auto;
+		margin-left: 120px;
 	}
 }

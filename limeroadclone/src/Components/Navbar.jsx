@@ -275,15 +275,27 @@ const NAV_ITEMS: Array<NavItem> = [
     href:"/women",
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
+        label: 'Suit and Dress Material',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
+        label: 'Lehengas',
       },
+      {
+        label: 'Blouses',
+      },
+      {
+        label: 'Dupattas',
+      },
+      {
+        label: 'Shawls',
+      },
+      {
+        label: 'Ethnic Dresses',
+      },
+      {
+        label: 'Shrugs',
+      },
+      
     ],
   },
   {
@@ -291,27 +303,82 @@ const NAV_ITEMS: Array<NavItem> = [
     href:"/men",
     children: [
       {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
+        label: 'T-shirts',
       },
       {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
+        label: 'Polo T Shirts',
       },
+      {
+        label: 'Casual Shirts',
+      },
+      {
+        label: 'Formal Shirts',
+      },
+      {
+        label: 'Suits & Blazers',
+      },
+      {
+        label: 'Jackets',
+      },
+      {
+        label: 'Sweaters & Sweatshirts',
+      },
+      
     ],
   },
   {
     label: 'Kids',
-    href: '#',
+    children:[
+      {
+        label: 'T-shirts',
+      },
+      {
+        label: 'Shirts',
+      },
+      {
+        label: 'Bottom wear',
+      },
+      {
+        label: 'Ethnic wear',
+      },
+      {
+        label: 'Sweater & Cardigans',
+      },
+      {
+        label: 'Coat and Jackets',
+      },
+      {
+        label: 'Innerwear and Nightwear',
+      },
+    ]
   },
   {
     label: 'Home',
-    href: '#',
+    children:[
+      {
+        label: 'Bed Linen & Furnishing',
+      },
+      {
+        label: 'Bed Sheet Sets',
+      },
+      {
+        label: 'Quilts & Comforters',
+      },
+      {
+        label: 'Blankets',
+      },
+      {
+        label: 'Bed Covers',
+      },
+      {
+        label: 'Pillow Covers',
+      },
+      {
+        label: 'Curtains',
+      },
+    ]
   },
   {
     label: 'Offers',
-    href: '#',
   },
 ];
