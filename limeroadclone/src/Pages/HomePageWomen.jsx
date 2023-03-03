@@ -5,16 +5,21 @@ import LandingPageCard from "../Components/LandingPageCard";
 import Navbar from "../Components/Navbar";
 import "./HomePage.css";
 import axios from "axios";
+import loaderimg from "../Images/loader.gif"
+
 
 const HomePageWomen = () => {
 	const [data, setData] = useState([]);
 	const [limit, setLimit] = useState(9);
+	const [loader, setLoader] = useState(true);
 
 	const getData = () => {
+		setLoader(true)
 		axios
 			.get(`https://unit-5backend.onrender.com/LandingWomen?_limit=${limit}`)
 			.then((res) => {
 				setData(res.data);
+				setLoader(false)
 			});
 	};
 	const handleLimit=()=>{
@@ -36,8 +41,9 @@ const HomePageWomen = () => {
 		<div>
 			<Navbar />
 			<div className="product_container">
-				{data?.map((el) => {
+			{loader?(<div className="loader"><img src={loaderimg} alt="" srcset="" /></div>):(data?.map((el) => {
 					return (
+						<div className="cards">
 						<LandingPageCard
 							designer={el.designer}
 							followers={el.followers}
@@ -45,8 +51,9 @@ const HomePageWomen = () => {
 							image={el.image}
 							likes={el.likes}
 						/>
+						</div>
 					);
-				})}
+				}))}
 			</div>
 			<button className="homebtn" onClick={handleLimit}>Load More</button>
 		</div>

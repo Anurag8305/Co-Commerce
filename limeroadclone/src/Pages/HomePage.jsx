@@ -7,17 +7,21 @@ import "./HomePage.css";
 import axios from "axios";
 import Navbar from "../Components/Navbar";
 import "./HomePage.css";
+import loaderimg from "../Images/loader.gif"
 
 
 const HomePage = () => {
 	const [data, setData] = useState([]);
 	const [limit, setLimit] = useState(9);
+	const [loader, setLoader] = useState(true);
 
 	const getData = () => {
+		setLoader(true)
 		axios
 			.get(`https://unit-5backend.onrender.com/LandingMen?_limit=${limit}`)
 			.then((res) => {
 				setData(res.data);
+				setLoader(false)
 
 			});
 	};
@@ -40,7 +44,7 @@ const HomePage = () => {
 		<div>
 	
 			<div className="product_container">
-				{data?.map((el) => {
+			{loader?(<div className="loader"><img src={loaderimg} alt="" srcset="" /></div>):(data?.map((el) => {
 					return (
 						<div className="cards">
 						<LandingPageCard
@@ -52,7 +56,8 @@ const HomePage = () => {
 						/>
 						</div>
 					);
-				})}
+				}))}
+				
 			</div>
 			<button className="homebtn" onClick={handleLimit}>Load More</button>
 		</div>
